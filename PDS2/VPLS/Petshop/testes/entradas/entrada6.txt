@@ -1,0 +1,6 @@
+add_g Attag 0 0
+add_c Supai 0.55 0
+add_g Kidit 1 1
+add_g Bouillechie 2 1
+add_c Fouzo 2.43 1
+print

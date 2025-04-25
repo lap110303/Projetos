@@ -1,0 +1,7 @@
+add p1 65 7
+add p2 50 9
+add p3 20 10
+add p4 30 10
+add p5 66 4.5
+trem 3 5
+onibus 3 5

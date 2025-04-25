@@ -1,0 +1,15 @@
+15 14
+Ufrufbus Jualedo
+Ufrufbus Phubury
+Jualedo Cidchester
+Jualedo Bufburg
+Phubury Walo
+Phubury Jans
+Cidchester Frine
+Cidchester Eryphis
+Bufburg Elesbert
+Bufburg Sandstuck
+Walo Roscoff
+Walo Omura
+Jans Imyr
+Jans Gotha

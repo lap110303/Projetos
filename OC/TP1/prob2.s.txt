@@ -1,0 +1,127 @@
+.data
+##### R1 START MODIFIQUE AQUI START #####
+# Definição de vetores e variáveis auxiliares
+vetor1: .word 0, 0, 0, 0, 0, 0, 0, 0, 0, 0  # Vetor para armazenar números de Mersenne
+
+##### R1 END MODIFIQUE AQUI END #####
+
+.text
+# Código principal
+add s0, zero, zero          # s0 = 0 (contador de sucessos)
+li a0, 4                    # a0 = 4 (quantidade de números a gerar)
+jal ra, eprimo              # Chama eprimo para verificar se o número 4 não é primo
+addi t0, zero, 1            # t0 = 0
+bne a0, t0, teste2          # Se a0 (resultado de eprimo) != 0, vai para teste2
+addi s0, s0, 1              # Incrementa s0 (sucesso)
+teste2: addi a0, zero, 2    # a0 = 2, preparando para o primosmersenne
+jal ra, primosmersenne      # Chama primosmersenne
+addi t0, zero, 7            # t0 = 7 (primeiro primo de Mersenne que esperamos)
+bne a0, t0, FIM             # Se o retorno for diferente de 7, finaliza
+addi s0, s0, 1              # Incrementa s0 (sucesso)
+beq zero, zero, FIM         # Finaliza o programa
+
+##### R2 START MODIFIQUE AQUI START #####
+# Procedimentos
+
+# Procedimento geramersenne
+geramersenne:
+    addi sp, sp, -8         # Espaço para registradores
+    sw ra, 4(sp)            # Salva o registrador ra na pilha
+    sw t3, 0(sp)            # Salva o ponteiro original t3 na pilha
+
+    li t2, 1                # Inicializa t2 como 1
+    addi t3, t3, -32	    # Armazena o espaço para os números de Mersenne
+    li t1, 8                # Número máximo de números de Mersenne
+    li s8, 0                # Inicializa o contador auxiliar
+
+geracao_numeros:
+    bge t2, t1, liberacao_espaco_geramersenne  # Se t2 >= t1, finaliza a geração
+
+    li t4, 1                # Inicializa t4 como 1
+    sll t4, t4, t2          # Calcula t4 = 2^t2
+    addi t4, t4, -1         # t4 = 2^t2 - 1 (número de Mersenne)
+
+    sw t4, 0(t3)            # Armazena o número de Mersenne no vetor
+    addi t3, t3, 4          # Move o ponteiro para o próximo espaço no vetor
+    addi s8, s8, 4          # Atualiza o contador auxiliar
+    addi t2, t2, 1          # Incrementa o contador de expoentes
+
+    j geracao_numeros       # Continua o loop
+
+liberacao_espaco_geramersenne:
+    lw t3, 0(sp)            # Restaura o valor original de t3
+    lw ra, 4(sp)            # Restaura o registrador ra
+    addi sp, sp, 8          # Libera espaço da pilha
+    jalr ra                 # Retorna ao chamador
+
+# Procedimento eprimo
+eprimo:
+    addi sp, sp, -8          # Espaço para registradores
+    sw ra, 4(sp)             # Salva o registrador ra na pilha
+    sw a0, 0(sp)             # Salva o número a ser verificado na pilha
+
+    li t0, 2                 # t0 = 2
+    blt a0, t0, nao_primo    # Se a0 < 2, não é primo, vai para nao_primo
+
+    li t1, 2                 # t1 = 2 
+    divu t2, a0, t1          # t2 = a0 / t1
+    beq t2, zero, primo      # Se a0 % t1 == 0, não é primo, vai para primo
+
+verifica_divisores:
+    mul t3, t1, t1           # t3 = t1 * t1
+    bgt t3, a0, primo        # Se t1 * t1 > a0, número é primo
+
+    divu t2, a0, t1          # t2 = a0 / t1
+    beq t2, zero, nao_primo  # Se a0 % t1 == 0, número não é primo
+    addi t1, t1, 1           # Incrementa t1
+    j verifica_divisores     # Continua a verificação
+
+primo:
+    li a0, 1                 # Se não encontrou divisor, é primo
+    j libera_espaco_primo    # Chamada final
+
+nao_primo:
+    li a0, 0                 # Se encontrou divisor, não é primo
+    j libera_espaco_primo    # Chamada final
+
+libera_espaco_primo:
+    lw ra, 4(sp)             # Restaura o registrador ra
+    addi sp, sp, 8           # Libera o espaço na pilha
+    jalr ra                  # Retorna ao chamador
+
+
+# Procedimento primosmersenne
+primosmersenne:
+    addi sp, sp, -8          # Espaço para registradpres
+    sw ra, 4(sp)             # Salva o registrador ra na pilha
+    sw a1, 0(sp)             # Salva o valor do registrador a1 na pilha
+    jal geramersenne         # Chama o procedimento geramersenne para gerar números de Mersenne
+
+    li t5, 0                 # Inicializa o contador de primos encontrados com 0
+    sub a5, t3, s8           # Inicializa o ponteiro para a lista de números de Mersenne (t3 - s8)
+
+verificacao_primos:
+    lw a0, 0(a5)             # Carrega o número de Mersenne atual no registrador a0
+    jal eprimo               # Chama o procedimento eprimo para verificar se o número é primo
+    beqz a0, primo_achado    # Se o número não for primo (a0 == 0), pula para primo_achado
+    addi a5, a5, 4           # Avança para o próximo número na lista
+    beq t5, a1, carregamento # Se o número de primos encontrados for igual ao solicitado (a1), pula para carregamento
+    j verificacao_primos     # Repete o loop para verificar o próximo número
+
+primo_achado:
+    addi t5, t5, 1           # Incrementa o contador de primos encontrados
+    addi a5, a5, 4           # Avança para o próximo número na lista
+    beq t5, a1, carregamento # Se o número de primos encontrados for igual ao solicitado (a1), pula para carregamento
+
+carregamento:
+    lw a2, 0(a5)             # Carrega o primo de Mersenne encontrado no registrador a2
+    lw a0, 0(a5)             # Ajusta o valor de a0
+    lw ra, 4(sp)             # Restaura o valor do registrador ra da pilha
+    lw a1, 0(sp)             # Restaura o valor do registrador a1 da pilha
+    addi sp, sp, 8           # Libera o espaço reservado na pilha
+    jalr ra                  # Retorna para a função chamadora
+
+
+##### R2 END MODIFIQUE AQUI END #####
+
+FIM: add t0, zero, s0

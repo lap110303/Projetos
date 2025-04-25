@@ -1,0 +1,71 @@
+$date
+	Tue Jul 30 03:37:13 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_stream_cypher $end
+$var wire 8 ! decrypted_message [7:0] $end
+$var wire 8 " cypher_text [7:0] $end
+$var reg 8 # message [7:0] $end
+$var reg 8 $ otp [7:0] $end
+$scope module uut $end
+$var wire 8 % cypher_text [7:0] $end
+$var wire 8 & decrypted_message [7:0] $end
+$var wire 8 ' message [7:0] $end
+$var wire 8 ( otp [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11001100 (
+b10101010 '
+b10101010 &
+b1100110 %
+b11001100 $
+b10101010 #
+b1100110 "
+b10101010 !
+$end
+#10
+b11110000 !
+b11110000 &
+b11000011 "
+b11000011 %
+b110011 $
+b110011 (
+b11110000 #
+b11110000 '
+#20
+b1111 !
+b1111 &
+b11110000 "
+b11110000 %
+b11111111 $
+b11111111 (
+b1111 #
+b1111 '
+#30
+b1010101 !
+b1010101 &
+b11111111 "
+b11111111 %
+b10101010 $
+b10101010 (
+b1010101 #
+b1010101 '
+#40
+b11111111 !
+b11111111 &
+b0 $
+b0 (
+b11111111 #
+b11111111 '
+#50

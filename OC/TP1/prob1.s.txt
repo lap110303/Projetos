@@ -1,0 +1,83 @@
+.data
+##### R1 START MODIFIQUE AQUI START #####
+# Vetor de teste pré-definido
+vetor: .word 1 2 3 4 5 6 7 8 9 10
+##### R1 END MODIFIQUE AQUI END #####
+
+.text
+# Inicialização da contagem de testes
+add s0, zero, zero # Quantidade de testes em que o programa passou
+
+# Teste 1
+addi a0, zero, 10
+addi a1, zero, 2
+jal ra, mmc
+addi t0, zero, 10
+bne a0, t0, teste2
+addi s0, s0, 1
+
+# Teste 2
+teste2: addi a0, zero, 6
+addi a1, zero, 4
+jal ra, mmc
+addi t0, zero, 12
+bne a0, t0, FIM
+addi s0, s0, 1
+
+# Encerramento
+beq zero, zero, FIM
+
+##### R2 START MODIFIQUE AQUI START #####
+# Função para calcular o MDC e o MMC(objetivo principal)
+mmc:
+    # Salvar registradores na pilha
+    addi sp, sp, 16       # Espaço para 4 registradores (ra, s1, s2, t0)
+    sw ra, 12(sp)         # Salvando os endereços de retorno
+    sw s1, 8(sp)	  #
+    sw s2, 4(sp)          #
+    sw t0, 0(sp)          #
+
+    # Inicializar variáveis
+    mv s1, a0              # s1 = a
+    mv s2, a1              # s2 = b
+
+    # Tratar casos em que os números são negativos ao transformá-los para positivos
+    blt s1, zero, inverte_sinal
+    j continua
+inverte_sinal:
+    neg s1, s1             # s1 = -s1
+continua:
+
+    blt s2, zero, inverte_sinal2
+    j continuar_mdc
+inverte_sinal2:
+    neg s2, s2             # s2 = -s2
+continuar_mdc:
+
+    # Calcular o MDC
+loop_mdc:
+    beq s2, zero, mdc_fim # Se b == 0, MDC encontrado
+    rem t0, s1, s2         # t0 = a/b
+    mv s1, s2              # a = b
+    mv s2, t0              # b = a/b
+    j loop_mdc
+
+mdc_fim:
+    mv t0, s1              # t0 = MDC
+
+    # Calcular o MMC: MMC = (a * b) / MDC
+    mul s1, a0, a1         # s1 = a * b
+    div a0, s1, t0         # MMC = (a * b) / MDC
+
+    # Restaurar registradores e retornar
+    lw ra, 12(sp)          # Restaurar os valores
+    lw s1, 8(sp)           #
+    lw s2, 4(sp)           #
+    lw t0, 0(sp)           #
+    addi sp, sp, -16       # Limpar o espaço de 4 registradores
+    jr ra
+
+##### R2 END MODIFIQUE AQUI END #####
+
+FIM:
+addi t0, s0, 0

@@ -1,0 +1,7 @@
+add_a Fita 8 
+add_g Bouillechie 2 1
+add_a Kode 15
+add_g Kidit 2 1
+add_a Kofa 12
+add_g Naillebolt 1 2
+print

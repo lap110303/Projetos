@@ -1,0 +1,7 @@
+add p1 65 7
+add p2 50 10
+add p3 20 10.5
+add p4 66 5.3
+add p5 70 5.5
+trem 3 5
+metro 3 5

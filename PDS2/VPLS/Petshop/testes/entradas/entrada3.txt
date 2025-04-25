@@ -1,0 +1,4 @@
+add_c Supai 0.25 0
+add_c Fouzo 2.13 1
+add_c Boke 4.67 2
+print

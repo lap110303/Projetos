@@ -1,0 +1,21 @@
+Info: Animal 1
+	Nome: Supai
+	Tipo: Cachorro
+	Peso: 0.25 kg
+	Pelo: curto
+Info: Animal 2
+	Nome: Fouzo
+	Tipo: Cachorro
+	Peso: 2.13 kg
+	Pelo: medio
+Info: Animal 3
+	Nome: Boke
+	Tipo: Cachorro
+	Peso: 4.67 kg
+	Pelo: longo
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal

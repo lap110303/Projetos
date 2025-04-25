@@ -1,0 +1,40 @@
+Info: Animal 1
+	Nome: Attag
+	Tipo: Gato
+	Pelo: nenhuma
+	Agressivo: alto
+Info: Animal 2
+	Nome: Kidit
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: moderado
+Info: Animal 3
+	Nome: Bouillechie
+	Tipo: Gato
+	Pelo: medio
+	Agressivo: moderado
+Info: Animal 4
+	Nome: Fouzo
+	Tipo: Cachorro
+	Peso: 3.3 kg
+	Pelo: medio
+Info: Animal 5
+	Nome: Kofa
+	Tipo: Ave
+	Tamanho: 10 cm
+Info: Animal 6
+	Nome: Kode
+	Tipo: Ave
+	Tamanho: 15 cm
+Destrutor Gato
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal

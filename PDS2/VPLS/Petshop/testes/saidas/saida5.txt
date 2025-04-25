@@ -1,0 +1,32 @@
+Info: Animal 1
+	Nome: Fita
+	Tipo: Ave
+	Tamanho: 5 cm
+Info: Animal 2
+	Nome: Supai
+	Tipo: Cachorro
+	Peso: 0.25 kg
+	Pelo: medio
+Info: Animal 3
+	Nome: Kofa
+	Tipo: Ave
+	Tamanho: 10 cm
+Info: Animal 4
+	Nome: Fouzo
+	Tipo: Cachorro
+	Peso: 2.5 kg
+	Pelo: longo
+Info: Animal 5
+	Nome: Kode
+	Tipo: Ave
+	Tamanho: 15 cm
+Destrutor Ave
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal

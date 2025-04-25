@@ -1,0 +1,3 @@
+t AshKetchum
+q 0 Squirtle Tsunami 5 3
+i 0

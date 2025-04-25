@@ -1,0 +1,12 @@
+add_g Naillebolt 1 2
+add_a Fita 9
+add_g Bouillechie 2 1
+add_c Fouzo 3.3 1
+add_a Sudu 14
+rm 1
+rm 3
+rm 5
+add_g Attag 0 0
+add_c Supai 0.55 0
+calc_orca
+print_orca

@@ -1,0 +1,3 @@
+t AshKetchum
+e 0 Pikachu Relampago 5 2
+i 0

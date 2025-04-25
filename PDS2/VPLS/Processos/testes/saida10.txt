@@ -1,0 +1,27 @@
+----------
+CORRECT
+----------
+3 Proc3 ALTA
+6 Proc6 ALTA
+2 Proc2 MEDIA
+5 Proc5 MEDIA
+1 Proc1 BAIXA
+4 Proc4 BAIXA
+----------
+3 Proc3 ALTA
+----------
+6 Proc6 ALTA
+2 Proc2 MEDIA
+5 Proc5 MEDIA
+1 Proc1 BAIXA
+4 Proc4 BAIXA
+----------
+1 Proc1 BAIXA
+----------
+CORRECT
+----------
+6 Proc6 ALTA
+2 Proc2 MEDIA
+5 Proc5 MEDIA
+4 Proc4 BAIXA
+----------

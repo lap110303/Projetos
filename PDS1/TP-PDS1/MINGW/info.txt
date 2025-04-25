@@ -1,0 +1,99 @@
+
+# **************************************************************************
+
+!!!!: MinGW-builds-0.3.0
+user: niXman
+date: 10.05.2012-16:50:55
+args: gcc-4.7.0 --dwarf --srcs-compress --mingw-compress --threads=win32 --rev=0
+
+# **************************************************************************
+
+host gcc 32-bit:
+Using built-in specs.
+COLLECT_GCC=D:\msys\home\niXman\mingw-builds\toolchains\mingw32\bin\gcc.exe
+COLLECT_LTO_WRAPPER=d:/msys/home/nixman/mingw-builds/toolchains/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.7.2/lto-wrapper.exe
+Target: i686-w64-mingw32
+Configured with: ../../mingw-src/gcc-4.7.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/bin/../mingw-gcc-4.7.2-x32 --with-sysroot=/bin/../mingw-gcc-4.7.2-x32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-lto --enable-graphite --enable-cloog-backend=isl --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-ppl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-tune=generic --with-host-libstdcxx='-static -lstdc++' --with-libiconv --with-gmp=/bin/../mingw-gcc-4.7.2-libs-x32 --with-mpfr=/bin/../mingw-gcc-4.7.2-libs-x32 --with-mpc=/bin/../mingw-gcc-4.7.2-libs-x32 --with-ppl=/bin/../mingw-gcc-4.7.2-libs-x32 --with-cloog=/bin/../mingw-gcc-4.7.2-libs-x32 --with-pkgversion='MinGW-builds: http://sourceforge.net/projects/mingwbuilds/' --with-bugurl=http://sourceforge.net/projects/mingwbuilds/ CFLAGS='-O2 -pipe -fomit-frame-pointer -I/bin/../mingw-gcc-4.7.2-libs-x32/include' CXXFLAGS='-O2 -pipe -fomit-frame-pointer' CPPFLAGS= LDFLAGS='-pipe -s -L/bin/../mingw-gcc-4.7.2-libs-x32/lib -L/bin/../mingw-gcc-4.7.2-x32/bin'
+Thread model: posix
+gcc version 4.7.2 (MinGW-builds: http://sourceforge.net/projects/mingwbuilds/) 
+
+# **************************************************************************
+
+host ld:
+GNU ld (GNU Binutils) 2.22.90.20120727
+  Supported emulations:
+   i386pe
+   i386pep
+
+# **************************************************************************
+
+libiconv-x32 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-build/libiconv-32 --enable-static --disable-shared CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+gmp-5.0.5 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --enable-static --disable-shared --enable-cxx CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+mpfr-3.1.1 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --enable-static --disable-shared --with-gmp=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+mpc-1.0.1 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --enable-static --disable-shared --with-gmp=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --with-mpfr=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+ppl-1.0 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --enable-static --disable-shared --with-gmp=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --disable-documentation --disable-ppl_lcdd --disable-ppl_lpsol --disable-ppl_pips --disable-ppl_config CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+cloog-0.17.0 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --enable-static --disable-shared --with-gmp-prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --with-ppl=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+mingw-w64-headers configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/i686-w64-mingw32 --enable-sdk=all --enable-secure-api CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+mingw-w64-crt configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/i686-w64-mingw32 --with-sysroot=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/i686-w64-mingw32 --enable-lib32 --disable-lib64 --enable-wildcard CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+winpthreads-x32 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-build/winpthreads-32 --enable-shared --enable-static CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+binutils-2.22.90 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix --with-sysroot=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix --disable-multilib --enable-lto --with-libiconv-prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --disable-nls --enable-shared --enable-static CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin -Wl,--large-address-aware"
+
+# **************************************************************************
+
+gcc-4.7.0 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix --with-sysroot=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix --enable-shared --enable-static --disable-multilib --enable-languages=c,c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-cloog-backend=isl --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --disable-sjlj-exceptions --with-dwarf2 --disable-ppl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-tune=generic --with-host-libstdcxx='-static -lstdc++' --with-libiconv --with-gmp=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --with-mpfr=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --with-mpc=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --with-ppl=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --with-cloog=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --with-pkgversion="Built by MinGW-builds project" --with-bugurl=http://sourceforge.net/projects/mingwbuilds/ CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+expat-2.1.0 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs --enable-static --disable-shared CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" CXXFLAGS="-O2 -pipe -fomit-frame-pointer" CPPFLAGS="" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin"
+
+# **************************************************************************
+
+gdb-7.5 configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix --enable-targets=x86_64-w64-mingw32,i686-w64-mingw32 --enable-64-bit-bfd --disable-nls --disable-werror --disable-win32-registry --disable-rpath --with-python --with-expat --with-libiconv CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include/python " LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib"
+
+# **************************************************************************
+
+make configuration:
+--host=i686-w64-mingw32 --build=i686-w64-mingw32 --prefix=/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix --enable-case-insensitive-file-system --program-prefix=mingw32- --enable-job-server --without-guile CFLAGS="-O2 -pipe -fomit-frame-pointer -I/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/include" LDFLAGS="-pipe -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-prefix/bin -L/home/niXman/x32-4.7.0-release-win32-dwarf-rev0-libs/lib"
+
+# **************************************************************************
+

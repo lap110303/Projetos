@@ -1,0 +1,28 @@
+Info: Animal 1
+	Nome: Attag
+	Tipo: Gato
+	Pelo: nenhuma
+	Agressivo: baixo
+Info: Animal 2
+	Nome: Kidit
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: moderado
+Info: Animal 3
+	Nome: Bouillechie
+	Tipo: Gato
+	Pelo: medio
+	Agressivo: alto
+Info: Animal 4
+	Nome: Naillebolt
+	Tipo: Gato
+	Pelo: longo
+	Agressivo: alto
+Destrutor Gato
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal

@@ -1,0 +1,9 @@
+Reserva deve ter duracao minima de 1 dia: 16/06/2023, 16/06/2023
+Quarto 3 ---------
+	Entrada: 02/07/2023, Saida: 05/07/2023
+	Entrada: 06/07/2023, Saida: 08/07/2023
+------------------
+Quarto 2 ---------
+	Entrada: 27/06/2023, Saida: 30/06/2023
+	Entrada: 01/07/2023, Saida: 07/07/2023
+------------------

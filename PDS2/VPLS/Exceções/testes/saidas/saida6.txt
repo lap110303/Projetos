@@ -1,0 +1,12 @@
+Existe uma reserva em alguns dos dias do periodo de 24/06/2023 a 28/06/2023
+Quarto 5 ---------
+	Entrada: 22/06/2023, Saida: 26/06/2023
+------------------
+Quarto 4 ---------
+	Entrada: 27/06/2023, Saida: 30/06/2023
+	Entrada: 02/07/2023, Saida: 07/07/2023
+------------------
+Quarto 2 ---------
+	Entrada: 16/06/2023, Saida: 19/06/2023
+	Entrada: 01/07/2023, Saida: 04/07/2023
+------------------

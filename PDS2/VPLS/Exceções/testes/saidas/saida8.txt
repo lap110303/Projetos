@@ -1,0 +1,5 @@
+Quarto ainda nao foi adicionado a lista: quarto 4
+Quarto 0 ---------
+	Entrada: 18/06/2023, Saida: 21/06/2023
+	Entrada: 22/06/2023, Saida: 26/06/2023
+------------------

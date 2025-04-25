@@ -1,0 +1,19 @@
+Nome: AshKetchum
+----------
+Pokemon: Pikachu
+Tipo ataque: Relampago
+Dano: 10
+Energia: 100
+----------
+Nome: James
+----------
+Pokemon: Squirtle
+Tipo ataque: Tsunami
+Dano: 8
+Energia: 100
+----------
+Pokemon: Charmander
+Tipo ataque: Napalm
+Dano: 4
+Energia: 100
+----------

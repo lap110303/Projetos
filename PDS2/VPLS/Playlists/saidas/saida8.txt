@@ -1,0 +1,10 @@
+Nenhum filme cadastrado na playlist: Favoritos!
+Nenhum filme cadastrado na playlist: AssistirDepois!
+Playlist: AssistirDepois
+Avengers (Aventura)     140min
+TheMatrix (Ficcao)      112min
+Tempo total: 04:12h
+Playlist: Favoritos
+Invencivel (Drama)      134min
+StarWars (Ficcao)       94min
+Tempo total: 03:48h

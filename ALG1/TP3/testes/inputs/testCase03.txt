@@ -1,0 +1,16 @@
+6 15
+Olympus Chintham 189
+Olympus Reality 52
+Olympus Eclipse 31
+Olympus Gravity 113
+Olympus Organic 276
+Chintham Reality 75
+Chintham Eclipse 72
+Chintham Gravity 273
+Chintham Organic 262
+Reality Eclipse 117
+Reality Gravity 149
+Reality Organic 199
+Eclipse Gravity 23
+Eclipse Organic 65
+Gravity Organic 133

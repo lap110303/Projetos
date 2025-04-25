@@ -1,0 +1,10 @@
+add_g Naillebolt 1 2
+add_a Fita 9
+add_g Kidit 1 1
+add_c Boke 5.73 2
+calc_orca
+print_orca
+rm_orca 2
+rm_orca 4
+print_orca
+rm_orca 4

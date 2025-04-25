@@ -1,0 +1,30 @@
+Deslocando com 100% da capacidade
+4 passageiros desembarcaram do trem
+Saldo insuficiente:
+	nome: p2
+	saldo: R$ 5.10
+Saldo insuficiente:
+	nome: p4
+	saldo: R$ 5.20
+Deslocando com 50% da capacidade
+2 passageiros desembarcaram do metro
+Passagem gratuita:
+	nome: p1
+	idade: 65
+	saldo: R$ 1.60
+Saldo insuficiente:
+	nome: p3
+	saldo: R$ 2.60
+Passagem gratuita:
+	nome: p4
+	idade: 66
+	saldo: R$ 5.20
+Onibus deslocando com 75% da capacidade
+3 passageiros desembarcaram do onibus
+Destrutor Onibus
+Destrutor Transporte
+Destrutor Metro
+Destrutor Trem
+Destrutor Transporte
+Destrutor Trem
+Destrutor Transporte

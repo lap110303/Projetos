@@ -1,0 +1,24 @@
+3 Proc3 ALTA
+6 Proc6 ALTA
+2 Proc2 MEDIA
+5 Proc5 MEDIA
+1 Proc1 BAIXA
+4 Proc4 BAIXA
+2 Proc2 MEDIA
+5 Proc5 MEDIA
+1 Proc1 BAIXA
+4 Proc4 BAIXA
+Tempo estimado para execução do processo Proc1 (id=1) eh 3.0 segundos.
+7 Proc7 ALTA
+2 Proc2 MEDIA
+5 Proc5 MEDIA
+1 Proc1 BAIXA
+4 Proc4 BAIXA
+Tempo estimado para execução do processo Proc1 (id=1) eh 6.0 segundos.
+7 Proc7 ALTA
+1 Proc1 BAIXA
+4 Proc4 BAIXA
+Tempo estimado para execução do processo Proc1 (id=1) eh 3.0 segundos.
+1 Proc1 BAIXA
+4 Proc4 BAIXA
+Tempo estimado para execução do processo Proc1 (id=1) eh 0.0 segundos.

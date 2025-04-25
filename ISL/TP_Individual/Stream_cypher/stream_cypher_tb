@@ -1,0 +1,65 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001f323339c10 .scope module, "tb_stream_cypher" "tb_stream_cypher" 2 1;
+ .timescale 0 0;
+v000001f3231f2570_0 .net "cypher_text", 7 0, L_000001f32333af70;  1 drivers
+v000001f3231f2610_0 .net "decrypted_message", 7 0, L_000001f323338fa0;  1 drivers
+v000001f3231f26b0_0 .var "message", 7 0;
+v000001f3231f2750_0 .var "otp", 7 0;
+S_000001f32333ad40 .scope module, "uut" "stream_cypher" 2 9, 3 1 0, S_000001f323339c10;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "message";
+    .port_info 1 /INPUT 8 "otp";
+    .port_info 2 /OUTPUT 8 "cypher_text";
+    .port_info 3 /OUTPUT 8 "decrypted_message";
+L_000001f32333af70 .functor XOR 8, v000001f3231f26b0_0, v000001f3231f2750_0, C4<00000000>, C4<00000000>;
+L_000001f323338fa0 .functor XOR 8, L_000001f32333af70, v000001f3231f2750_0, C4<00000000>, C4<00000000>;
+v000001f323339da0_0 .net "cypher_text", 7 0, L_000001f32333af70;  alias, 1 drivers
+v000001f32333aed0_0 .net "decrypted_message", 7 0, L_000001f323338fa0;  alias, 1 drivers
+v000001f323338f00_0 .net "message", 7 0, v000001f3231f26b0_0;  1 drivers
+v000001f3231f24d0_0 .net "otp", 7 0, v000001f3231f2750_0;  1 drivers
+    .scope S_000001f323339c10;
+T_0 ;
+    %vpi_call 2 20 "$dumpfile", "stream_cypher_tb.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001f323339c10 {0 0 0};
+    %pushi/vec4 170, 0, 8;
+    %store/vec4 v000001f3231f26b0_0, 0, 8;
+    %pushi/vec4 204, 0, 8;
+    %store/vec4 v000001f3231f2750_0, 0, 8;
+    %delay 10, 0;
+    %pushi/vec4 240, 0, 8;
+    %store/vec4 v000001f3231f26b0_0, 0, 8;
+    %pushi/vec4 51, 0, 8;
+    %store/vec4 v000001f3231f2750_0, 0, 8;
+    %delay 10, 0;
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v000001f3231f26b0_0, 0, 8;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v000001f3231f2750_0, 0, 8;
+    %delay 10, 0;
+    %pushi/vec4 85, 0, 8;
+    %store/vec4 v000001f3231f26b0_0, 0, 8;
+    %pushi/vec4 170, 0, 8;
+    %store/vec4 v000001f3231f2750_0, 0, 8;
+    %delay 10, 0;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v000001f3231f26b0_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v000001f3231f2750_0, 0, 8;
+    %delay 10, 0;
+    %vpi_call 2 49 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_stream_cypher.v";
+    "stream_cypher.v";

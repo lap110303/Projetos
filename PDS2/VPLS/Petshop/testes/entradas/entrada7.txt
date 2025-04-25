@@ -1,0 +1,7 @@
+add_g Attag 0 2
+add_g Kidit 1 1
+add_g Bouillechie 2 1
+add_c Fouzo 3.3 1
+add_a Kofa 10
+add_a Kode 15
+print

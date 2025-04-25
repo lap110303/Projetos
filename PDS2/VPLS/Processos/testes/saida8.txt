@@ -1,0 +1,9 @@
+1 Proc1 BAIXA
+2 Proc2 BAIXA
+3 Proc3 BAIXA
+4 Proc4 BAIXA
+Tempo estimado para execução do processo Proc4 (id=4) eh 1.5 segundos.
+2 Proc2 BAIXA
+3 Proc3 BAIXA
+4 Proc4 BAIXA
+Tempo estimado para execução do processo Proc4 (id=4) eh 1.0 segundos.

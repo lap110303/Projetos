@@ -1,0 +1,11 @@
+5 10
+Fusion Giga 240
+Fusion Energy 13
+Fusion Radiance 66
+Fusion Solara 250
+Giga Energy 176
+Giga Radiance 181
+Giga Solara 281
+Energy Radiance 217
+Energy Solara 173
+Radiance Solara 148

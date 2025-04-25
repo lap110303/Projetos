@@ -1,0 +1,54 @@
+Destrutor Gato
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal
+Quantidade de orçamentos: 4
+============================
+Info: Orcamento
+Valor: R$ 160.00
+Pet Info: Animal 2
+	Nome: Fita
+	Tipo: Ave
+	Tamanho: 9 cm
+============================
+============================
+Info: Orcamento
+Valor: R$ 208.35
+Pet Info: Animal 4
+	Nome: Fouzo
+	Tipo: Cachorro
+	Peso: 3.30 kg
+	Pelo: medio
+============================
+============================
+Info: Orcamento
+Valor: R$ 150.00
+Pet Info: Animal 6
+	Nome: Attag
+	Tipo: Gato
+	Pelo: nenhuma
+	Agressivo: baixo
+============================
+============================
+Info: Orcamento
+Valor: R$ 128.05
+Pet Info: Animal 7
+	Nome: Supai
+	Tipo: Cachorro
+	Peso: 0.55 kg
+	Pelo: curto
+============================
+Destrutor Ave
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Orcamento
+Destrutor Orcamento
+Destrutor Orcamento
+Destrutor Orcamento

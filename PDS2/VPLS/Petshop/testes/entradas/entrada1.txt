@@ -1,0 +1,5 @@
+add_g Attag 0 0
+add_g Kidit 1 1
+add_g Bouillechie 2 2
+add_g Naillebolt 3 2
+print

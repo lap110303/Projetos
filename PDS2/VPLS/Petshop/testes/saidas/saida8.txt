@@ -1,0 +1,36 @@
+Info: Animal 1
+	Nome: Naillebolt
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: alto
+Info: Animal 2
+	Nome: Bouillechie
+	Tipo: Gato
+	Pelo: medio
+	Agressivo: moderado
+Info: Animal 3
+	Nome: Fouzo
+	Tipo: Cachorro
+	Peso: 3.3 kg
+	Pelo: medio
+Info: Animal 4
+	Nome: Sudu
+	Tipo: Ave
+	Tamanho: 14 cm
+Destrutor Gato
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Info: Animal 2
+	Nome: Bouillechie
+	Tipo: Gato
+	Pelo: medio
+	Agressivo: moderado
+Info: Animal 4
+	Nome: Sudu
+	Tipo: Ave
+	Tamanho: 14 cm
+Destrutor Gato
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal

@@ -1,0 +1,5 @@
+add_a Fita 5 
+add_a Kofa 10
+add_a Kode 15
+add_a Sudu 20
+print

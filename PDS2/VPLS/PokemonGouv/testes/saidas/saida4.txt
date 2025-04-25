@@ -1,0 +1,7 @@
+Nome: AshKetchum
+----------
+Pokemon: Charmander
+Tipo ataque: Napalm
+Dano: 4
+Energia: 100
+----------

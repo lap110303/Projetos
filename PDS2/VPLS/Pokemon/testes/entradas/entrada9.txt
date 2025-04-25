@@ -1,0 +1,11 @@
+t Treinador0
+i 0
+e 0 Pikachu Relampago 5 2
+i 0
+t Treinador1
+q 1 Squirtle Tsunami 5 3
+i 1
+h 0 0 1 0
+h 1 0 0 0
+i 0
+i 1

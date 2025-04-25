@@ -1,0 +1,7 @@
+Nome: AshKetchum
+----------
+Pokemon: Squirtle
+Tipo ataque: Tsunami
+Dano: 8
+Energia: 100
+----------

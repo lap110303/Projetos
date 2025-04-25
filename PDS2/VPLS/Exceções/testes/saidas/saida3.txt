@@ -1,0 +1,6 @@
+Data saida nao pode ser menor que a data entrada: 05/07/2023, 02/07/2023
+Quarto 1 ---------
+	Entrada: 15/06/2023, Saida: 17/06/2023
+	Entrada: 27/06/2023, Saida: 30/06/2023
+	Entrada: 01/07/2023, Saida: 04/07/2023
+------------------

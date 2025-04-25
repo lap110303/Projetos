@@ -1,0 +1,7 @@
+t AshKetchum
+e 0 Pikachu Relampago 5 2
+t James
+q 1 Squirtle Tsunami 5 3
+x 1 Charmander Napalm 8 2
+i 0
+i 1

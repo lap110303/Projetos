@@ -1,0 +1,27 @@
+Quarto ainda nao foi adicionado a lista: quarto 1
+Reserva nao encontrada no quarto 2: 22/06/2023
+Data saida nao pode ser menor que a data entrada: 05/07/2023, 02/07/2023
+Existe uma reserva em alguns dos dias do periodo de 01/07/2023 a 04/07/2023
+Data de entrada esta no passado: 01/05/2023
+Numero do quarto informado nao pertence a colecao: quarto 6
+Existe uma reserva em alguns dos dias do periodo de 26/06/2023 a 28/06/2023
+Reserva deve ter duracao minima de 1 dia: 18/06/2023, 18/06/2023
+Reserva nao encontrada no quarto 4: 16/06/2023
+Reserva nao encontrada no quarto 2: 23/06/2023
+Reserva nao encontrada no quarto 4: 22/06/2023
+Quarto 0 ---------
+	Entrada: 18/06/2023, Saida: 21/06/2023
+------------------
+Quarto 2 ---------
+	Entrada: 16/06/2023, Saida: 17/06/2023
+	Entrada: 27/06/2023, Saida: 30/06/2023
+------------------
+Quarto 4 ---------
+	Entrada: 27/06/2023, Saida: 04/07/2023
+------------------
+Quarto 3 ---------
+	Entrada: 06/07/2023, Saida: 08/07/2023
+------------------
+Quarto 5 ---------
+	Entrada: 22/06/2023, Saida: 26/06/2023
+------------------

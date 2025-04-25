@@ -1,0 +1,9 @@
+O programa foi feito no VS Code no windowns 10. Para executar o programa da espiral quadrada,
+basta compilá-lo por meio do comando "gcc espquadrada.c -o espquadrada" e executá-lo
+por meio do comando "./espquadrada". Para executar o programa da espiral triangular,
+basta compilá-lo por meio do comando "gcc esptriangular.c -o esptriangular" e executá-lo
+por meio do comando "./esptriangular".
+
+
+
+

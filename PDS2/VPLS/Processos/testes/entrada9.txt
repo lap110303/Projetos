@@ -1,0 +1,21 @@
+a Proc1 0
+a Proc2 1
+a Proc3 2
+a Proc4 0
+a Proc5 1
+a Proc6 2
+p
+r
+r
+p
+e 1
+a Proc7 2
+p
+e 1
+i 2
+i 5
+p
+e 1
+r
+p
+e 1

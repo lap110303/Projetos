@@ -1,0 +1,3 @@
+t AshKetchum
+x 0 Charmander Napalm 8 2
+i 0

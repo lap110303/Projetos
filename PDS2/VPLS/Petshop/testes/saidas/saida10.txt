@@ -1,0 +1,67 @@
+Quantidade de orçamentos: 4
+============================
+Info: Orcamento
+Valor: R$ 220.00
+Pet Info: Animal 1
+	Nome: Naillebolt
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: alto
+============================
+============================
+Info: Orcamento
+Valor: R$ 160.00
+Pet Info: Animal 2
+	Nome: Fita
+	Tipo: Ave
+	Tamanho: 9 cm
+============================
+============================
+Info: Orcamento
+Valor: R$ 200.00
+Pet Info: Animal 3
+	Nome: Kidit
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: moderado
+============================
+============================
+Info: Orcamento
+Valor: R$ 252.02
+Pet Info: Animal 4
+	Nome: Boke
+	Tipo: Cachorro
+	Peso: 5.73 kg
+	Pelo: longo
+============================
+Destrutor Orcamento
+Destrutor Orcamento
+============================
+Info: Orcamento
+Valor: R$ 220.00
+Pet Info: Animal 1
+	Nome: Naillebolt
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: alto
+============================
+============================
+Info: Orcamento
+Valor: R$ 200.00
+Pet Info: Animal 3
+	Nome: Kidit
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: moderado
+============================
+O id 4 nao faz parte da lista
+Destrutor Gato
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Orcamento
+Destrutor Orcamento

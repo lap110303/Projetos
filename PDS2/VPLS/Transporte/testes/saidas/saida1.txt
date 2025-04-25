@@ -1,0 +1,10 @@
+Saldo insuficiente:
+	nome: p1
+	saldo: R$ 0.00
+Saldo insuficiente:
+	nome: p2
+	saldo: R$ 4.00
+Deslocando com 67% da capacidade
+2 passageiros desembarcaram do trem
+Destrutor Trem
+Destrutor Transporte

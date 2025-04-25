@@ -1,0 +1,8 @@
+Numero do quarto informado nao pertence a colecao: quarto 6
+Reserva nao encontrada no quarto 4: 22/06/2023
+Quarto 0 ---------
+	Entrada: 18/06/2023, Saida: 21/06/2023
+------------------
+Quarto 4 ---------
+	Entrada: 27/06/2023, Saida: 04/07/2023
+------------------

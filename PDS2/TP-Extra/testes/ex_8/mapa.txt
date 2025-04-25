@@ -1,0 +1,19 @@
+18 25
+B . . . . . . . . . . O O O O P . . . . . P P O .
+. . . . . . O O F O P O O P P P . . . . F P . . .
+. . . . F O O O F O O P F P P . . . . . . . . . .
+. . . P O O O O O O F F F . F . . . . . F F P . .
+. . P P O O F O O F P . . . . . . . . . . P P P P
+P O F F O O O O O P . F . . . . . . . . . P O O F
+O O O O O O O O . F . . . . . . . . . F . O O O O
+P P O O O O O O . F . . . F . . . . . . O O O O O
+. F P O O O O O . . . . . . . P . P F O O F O . P
+. . P O O O O O . . . . . . . O P P P O O F . . .
+. . . O O O F P . . . . . O O O O O O O O P . . .
+. F . F F O P F F . . . P F F O F O O O O P . F .
+. F . O O . . . . . . . P O F O O O O O O O . . .
+. . O O . F . . F . . . O F O F O O O O P O . . O
+. P O O P . . . F . F P O O O O O O P O P F . O O
+. O O O P . . . . . F O O O O O F P P . . . . P P
+. O O O O P . . P . P O O O F P . P . . . . . . P
+. P O O O P . . P O O O O O P . . . . . . . . . .

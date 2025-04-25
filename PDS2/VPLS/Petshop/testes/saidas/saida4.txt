@@ -1,0 +1,39 @@
+Info: Animal 1
+	Nome: Fita
+	Tipo: Ave
+	Tamanho: 8 cm
+Info: Animal 2
+	Nome: Bouillechie
+	Tipo: Gato
+	Pelo: medio
+	Agressivo: moderado
+Info: Animal 3
+	Nome: Kode
+	Tipo: Ave
+	Tamanho: 15 cm
+Info: Animal 4
+	Nome: Kidit
+	Tipo: Gato
+	Pelo: medio
+	Agressivo: moderado
+Info: Animal 5
+	Nome: Kofa
+	Tipo: Ave
+	Tamanho: 12 cm
+Info: Animal 6
+	Nome: Naillebolt
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: alto
+Destrutor Ave
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Ave
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal

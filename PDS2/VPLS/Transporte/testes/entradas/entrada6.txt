@@ -1,0 +1,6 @@
+add p1 65 7
+add p2 50 10.3
+add p3 20 12
+add p4 66 5.5
+metro 4 5
+onibus 4 5

@@ -1,0 +1,35 @@
+Info: Animal 1
+	Nome: Attag
+	Tipo: Gato
+	Pelo: nenhuma
+	Agressivo: baixo
+Info: Animal 2
+	Nome: Supai
+	Tipo: Cachorro
+	Peso: 0.55 kg
+	Pelo: curto
+Info: Animal 3
+	Nome: Kidit
+	Tipo: Gato
+	Pelo: curto
+	Agressivo: moderado
+Info: Animal 4
+	Nome: Bouillechie
+	Tipo: Gato
+	Pelo: medio
+	Agressivo: moderado
+Info: Animal 5
+	Nome: Fouzo
+	Tipo: Cachorro
+	Peso: 2.43 kg
+	Pelo: medio
+Destrutor Gato
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Gato
+Destrutor Animal
+Destrutor Cachorro
+Destrutor Animal

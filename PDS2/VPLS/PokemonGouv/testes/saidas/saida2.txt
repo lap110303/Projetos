@@ -1,0 +1,7 @@
+Nome: AshKetchum
+----------
+Pokemon: Pikachu
+Tipo ataque: Relampago
+Dano: 10
+Energia: 100
+----------

@@ -1,0 +1,15 @@
+Passagem gratuita:
+	nome: p1
+	idade: 65
+	saldo: R$ 0.00
+Saldo insuficiente:
+	nome: p2
+	saldo: R$ 4.00
+Passagem gratuita:
+	nome: p4
+	idade: 66
+	saldo: R$ 4.90
+Onibus deslocando com 100% da capacidade
+3 passageiros desembarcaram do onibus
+Destrutor Onibus
+Destrutor Transporte

@@ -1,0 +1,50 @@
+Nome: Treinador0
+----------
+Nenhum Pokemon cadastrado!
+----------
+Nome: Treinador0
+----------
+Pokemon: Pikachu
+Tipo ataque: Relampago
+Dano: 10
+Energia: 100
+----------
+Nome: Treinador1
+----------
+Pokemon: Squirtle
+Tipo ataque: Tsunami
+Dano: 8
+Energia: 100
+----------
+### Batalha ###
+Treinador0 (Pikachu) vs. Treinador1 (Squirtle)
+Pikachu!
+Relampago!
+Bzzzz!
+Dano: 10
+Squirtle!
+Energia: 90
+#########
+### Batalha ###
+Treinador1 (Squirtle) vs. Treinador0 (Pikachu)
+Squirtle!
+Tsunami!
+Splash!
+Dano: 8
+Pikachu!
+Energia: 92
+#########
+Nome: Treinador0
+----------
+Pokemon: Pikachu
+Tipo ataque: Relampago
+Dano: 10
+Energia: 92
+----------
+Nome: Treinador1
+----------
+Pokemon: Squirtle
+Tipo ataque: Tsunami
+Dano: 8
+Energia: 90
+----------
