@@ -1,0 +1,5 @@
+1) Vá até a paste Code no terminal e digite:
+make
+
+2) Após o comando ser executado corretamente digite ainda no terminal dentro da pasta code:
+./build/vpl_execution

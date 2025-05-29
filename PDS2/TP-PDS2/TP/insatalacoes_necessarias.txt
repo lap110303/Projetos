@@ -1,0 +1,3 @@
+Bibliotecas do Allegro:
+sudo apt-get update
+sudo apt-get install liballegro5-dev

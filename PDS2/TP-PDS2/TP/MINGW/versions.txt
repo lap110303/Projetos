@@ -1,0 +1,57 @@
+
+name: libiconv-1.14
+url: http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.14.tar.gz
+version: 1.14
+
+name: gmp-5.0.5
+url: ftp://ftp.gmplib.org/pub/gmp-5.0.5/gmp-5.0.5.tar.bz2
+version: 5.0.5
+
+name: mpfr-3.1.1
+url: ftp://ftp.gnu.org/gnu/mpfr/mpfr-3.1.1.tar.bz2
+version: 3.1.1
+
+name: mpc-1.0.1
+url: http://www.multiprecision.org/mpc/download/mpc-1.0.1.tar.gz
+version: 1.0.1
+
+name: ppl-1.0
+url: http://bugseng.com/products/ppl/download/ftp/releases/1.0/ppl-1.0.tar.bz2
+version: 1.0
+
+name: cloog-0.17.0
+url: http://www.bastoul.net/cloog/pages/download/count.php3?url=./cloog-0.17.0.tar.gz
+version: 0.17.0
+
+name: mingw-w64-headers
+url: http://mingw-w64.svn.sourceforge.net/svnroot/mingw-w64/trunk/mingw-w64-headers
+revision: 5428
+
+name: mingw-w64-crt
+url: http://mingw-w64.svn.sourceforge.net/svnroot/mingw-w64/trunk/mingw-w64-crt
+revision: 5428
+
+name: winpthreads
+url: http://mingw-w64.svn.sourceforge.net/svnroot/mingw-w64/experimental/winpthreads
+revision: 5428
+
+name: binutils-2.22.90
+url: ftp://mirrors.kernel.org/sources.redhat.com/binutils/snapshots/binutils-2.22.90.tar.bz2
+version: 2.22.90
+
+name: gcc-4.7.0
+url: ftp://ftp.gnu.org/gnu/gcc/gcc-4.7.0/gcc-4.7.0.tar.bz2
+version: 4.7.0
+
+name: expat-2.1.0
+url: http://sourceforge.net/projects/expat/files/expat/2.1.0/expat-2.1.0.tar.gz
+version: 2.1.0
+
+name: gdb-7.5
+url: ftp://ftp.gnu.org/gnu/gdb/gdb-7.5.tar.bz2
+version: 7.5
+
+name: make
+url: ":pserver:anonymous:@cvs.sv.gnu.org:/sources/make"
+revision: 09/21/2012
+

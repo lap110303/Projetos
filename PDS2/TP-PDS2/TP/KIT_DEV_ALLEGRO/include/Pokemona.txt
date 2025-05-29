@@ -1,0 +1,40 @@
+#ifndef POKEMON_HPP
+#define POKEMON_HPP
+
+#include <iostream>
+
+
+class Pokemon{
+    private:
+    std::string _nome;
+    std::string _tipo;
+    int _level;
+    double _dano_ataque;
+    double _dano_sofrido;
+    double _energia;
+    double _defesa;
+    std::string _fraqueza;
+
+    public:
+    Pokemon(std::string nome, std::string tipo, int level, double dano_ataque, double energia, double defesa, std::string fraqueza);
+    ~Pokemon();
+    std::string getNome();
+    std::string getTipo();
+    double getDano();
+    void setDano(double dano_ataque);
+    double getDanoSofrido();
+    void setDanoSofrido(double dano_sofrido);
+    std::string getFraqueza();
+    double getEnergia();
+    std::string imprimirInfos();
+    void setEnergia(double energia);
+    void atacar(Pokemon* defensor, std::string ataque);
+
+    virtual void receberDano(double dano, std::string tipo) =0;
+    virtual double calcularDanoAtaque(std::string ataque) = 0;
+
+};
+
+
+
+#endif
