@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <!-- Load socket io -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+
+        <!-- Load external libraries -->
+        <script src="{{ url_for('static', filename='lib/p5.js') }}"></script>
+
+        <!-- Load sketch -->
+        <script src="{{ url_for('static', filename='math.js') }}"></script>
+        <script src="{{ url_for('static', filename='matrix.js') }}"></script>
+        <script src="{{ url_for('static', filename='notepad.js') }}"></script>
+        <script src="{{ url_for('static', filename='output.js') }}"></script>
+        <script src="{{ url_for('static', filename='neural.js') }}"></script>
+        <script src="{{ url_for('static', filename='sketch.js') }}"></script>
+
+         <!-- Bootstrap CSS -->
+    
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+        
+         <!-- Link to CSS file -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    
+        <!-- Import Barlow font -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="d-flex align-items-center mt-3">
+                <img src="{{ url_for('static', filename='images/ufmg-logo.png') }}" alt="Image" class="me-3" style="max-height: 50px;">
+                <div class="mb-3">
+                <h2>DCC642 - Introdução à Inteligência Artificial</h2>
+                <h2>Departamento de Ciência da Computação</h2>
+                <h2>Universidade Federal de Minas Gerais</h2>
+                </div>
+            </div>
+        
+        <div class="mb-3">
+            <h2><strong>TP3 - Aprendizado de Máquina</strong></h2>
+        </div>
+        
+        <div class="row align-items-end">
+            <div class="form-group col mb-3">
+                <label for="epochsMax" class="form-label">Épocas (Max):</label>
+                <input id="epochsMax" class="form-control" step="1" type="number" min="0"></input>
+            </div>
+
+            <div class="form-group col mb-3">
+                <label for="learningRate" class="form-label">Taxa de aprendizado:</label>
+                <input id="learningRate" class="form-control" step="0.01" type="number" min="0"></input>
+            </div>
+
+            <div class="form-group col mb-3">
+                <label for="hiddenSize" class="form-label">Neurônios (camada escondida):</label>
+                <input id="hiddenSize" class="form-control" type="number" step="1" min="1"></input>
+            </div>
+        </div>
+
+        <div class="row align-items-end">
+            <div class="col-sm-7 mb-3">
+                <button id="startSearch" type="button" class="btn btn-success" onclick="startSearch()"> Iniciar</button>
+                <button id="saveResults" type="button" class="btn btn-warning" onclick="saveResults()" disabled> Salvar Pesos</button>
+                <button id="loadResults" type="button" class="btn btn-warning" onclick="loadResults()"> Carregar Pesos</button>
+                <button id="cleanNotebook" type="button" class="btn btn-warning" onclick="cleanNotepad()"> Limpar Dígito</button>
+            </div>
+        </div>
+
+        <div class="row align-items-end">
+            <div class="col-sm-3 pl-4 mb-3">
+                <input class="form-check-input" type="checkbox" id="init_parameters" checked="true">
+                <label class="form-check-label" for="init_parameters">Incializar pesos</label>
+              </div>
+        </div>
+
+
+        <div class="mb-3">
+            <div id="mapCanvas"></div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-3 mb-3">
+                <label for="epoch" class="form-label">Época:</label>
+                <p class="text-left pt-1" id="epoch">0</p>
+            </div>
+
+            <div class="form-group col-sm-3 mb-3">
+                <label for="loss" class="form-label">Erro (treinamento):</label>
+                <p class="text-left pt-1" id="loss">0</p>
+            </div>
+
+            <div class="form-group col-sm-3 mb-3">
+                <label for="accuracy" class="form-label">Acurácia (teste):</label>
+                <p class="text-left pt-1" id="accuracy">0</p>
+            </div>
+        </div>
+        
+    
+    </div>
+    </body>
+</html>

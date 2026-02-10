@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package central;
+
+// O serviço concentrador / super-par
+service Central {
+  // Servidor de pares se registra no concentrador
+  rpc Registro(MsgRegistro) returns (MsgRetornoRegistro);
+  // Cliente busca o localizador de uma chave
+  // quem_pediu é usado na Parte 3 para evitar loops
+  rpc Busca(MsgBusca) returns (MsgLocalizador);
+  // Super-par se registra com outro super-par (Parte 3)
+  rpc Pareamento(MsgPareamento) returns (MsgRetornoPareamento);
+  // Termina a execução do servidor
+  rpc Termino(MsgVazia) returns (MsgRetornoTermino);
+}
+
+message MsgRegistro {
+  string localizador = 1;
+  repeated int32 chaves = 2; // Lista de chaves
+}
+
+message MsgRetornoRegistro {
+  // Número de chaves processadas
+  int32 retorno = 1;
+}
+
+message MsgBusca {
+  int32 chave = 1;
+  string quem_pediu = 2; // Endereço de quem chamou (para Parte 3)
+}
+
+message MsgLocalizador {
+  // Endereço do servidor de pares, ou string vazia
+  string localizador = 1;
+}
+
+message MsgPareamento {
+  string localizador = 1; // Endereço do outro super-par
+}
+
+message MsgRetornoPareamento {
+  // 0 (Parte 2) ou novo número de pares (Parte 3)
+  int32 retorno = 1;
+}
+
+message MsgVazia {}
+
+message MsgRetornoTermino {
+  // Número total de chaves registradas
+  int32 retorno = 1;
+}

@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <!-- Load external libraries -->
+    <script src="{{ url_for('static', filename='lib/p5.js') }}"></script>
+
+    <!-- Load sketch -->
+    <script src="{{ url_for('static', filename='sketch.js') }}"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Import Barlow font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="d-flex align-items-center mt-3">
+        <img src="{{ url_for('static', filename='images/ufmg-logo.png') }}" alt="Image" class="me-3" style="max-height: 50px;">
+        <div class="mb-3">
+          <h2>DCC642 - Introdução à Inteligência Artificial</h2>
+          <h2>Departamento de Ciência da Computação</h2>
+          <h2>Universidade Federal de Minas Gerais</h2>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <h2><strong>TP2 - Busca Competitiva</strong></h2>
+      </div>
+
+      <!-- Linha de configurações principais -->
+      <div class="row align-items-end">
+        <!-- Selecionar jogador 1: Humano ou IA -->
+        <div class="form-group col-sm-3 mb-3">
+          <label for="player1" class="form-label">P1 (Vermelho):</label>
+          <select id="player1" class="form-select" onchange="LoadPlayers()">
+            <option value="human" selected>Humano</option>
+            <option value="ai_random">IA (Aleatório)</option>
+            <option value="ai_minimax">IA (Minimax)</option>
+            <option value="ai_alphabeta">IA (Alfa-Beta)</option>
+            <option value="ai_id">IA (Iterative Deepening)</option>
+          </select>
+        </div>
+
+        <!-- Selecionar jogador 2: Humano ou IA -->
+        <div class="form-group col-sm-3 mb-3">
+          <label for="player2" class="form-label">P2 (Amarelo):</label>
+          <select id="player2" class="form-select" onchange="LoadPlayers()">
+            <option value="human">Humano</option>
+            <option value="ai_random" selected>IA (Aleatório)</option>
+            <option value="ai_minimax">IA (Minimax)</option>
+            <option value="ai_alphabeta">IA (Alfa-Beta)</option>
+            <option value="ai_id">IA (Iterative Deepening)</option>
+          </select>
+        </div>
+
+        <div class="col mb-3">
+          <button id="newGame" class="btn btn-primary" onclick="newGame()">Novo jogo</button>
+        </div>
+      </div>
+
+      <!-- Parâmetros genéricos (sem escolher algoritmo) -->
+      <div class="row">
+        <div class="form-group col-sm-3 mb-3">
+          <label for="maxDepth" class="form-label">Profundidade máxima:</label>
+          <input id="maxDepth" class="form-control" type="number" min="1" step="1" value="5">
+        </div>
+
+        <div class="form-group col-sm-3 mb-3">
+          <label for="maxTimeMs" class="form-label">Tempo por jogada (ms):</label>
+          <input id="maxTimeMs" class="form-control" type="number" min="1000" step="100" value="2000">
+        </div>
+      </div>
+
+      <!-- Canvas -->
+      <div class="mb-3">
+        <div id="mapCanvas"></div>
+      </div>
+
+      <!-- HUD -->
+      <div class="row">
+        <div class="form-group col-sm-3 mb-3">
+          <label class="form-label">Vez:</label>
+          <div id="turnLabel" class="form-control" style="border: None; padding-left: 2px;" readonly>—</div>
+        </div>
+
+        <div class="form-group col-sm-3 mb-3">
+          <label class="form-label">Vencedor:</label>
+          <div id="winnerLabel" class="form-control" style="border: None; padding-left: 2px;" readonly>—</div>
+        </div>
+      </div>
+
+      <!-- Instruções -->
+        <div class="mb-3">
+            <h4>Instruções:</h4>
+            <ul>
+            <li>Selecione se cada jogador será um humano ou uma IA.</li>
+            <li>Clique em "Novo jogo" para iniciar uma nova partida.</li>
+            <li>Defina o tempo máximo que a IA terá para pensar em cada jogada.</li>
+            <li>Se for um jogador humano, clique na coluna onde deseja jogar.</li>
+            <li>Acompanhe a vez atual e o vencedor no HUD abaixo do canvas.</li>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>

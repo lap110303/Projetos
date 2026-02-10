@@ -1,0 +1,35 @@
+# docker-compose.yml (VERSÃO FINAL E CORRIGIDA)
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: '${DB_PASSWORD}'
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c 'timeout 1 bash -c \"</dev/tcp/127.0.0.1/1433\" >/dev/null 2>&1 || exit 1'"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DISPLAY=${DISPLAY}
+      # A string de conexão também pode usar a variável
+      - DB_CONN=DRIVER={ODBC Driver 17 for SQL Server};SERVER=db;DATABASE=siptv;UID=sa;PWD=${DB_PASSWORD}
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    command: python siptv/lib/main/main.py --mode normal
+
+volumes:
+  sqlserver_data:

@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    font-family: 'Barlow', sans-serif;
+    max-width: 860px; /* Adjust the maximum width as needed */
+    margin: auto;
+}
+
+h2 {
+    margin: 5px 0; /* Adjust the margin as needed */
+    font-size: 20px;
+}
+
+canvas {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+ }

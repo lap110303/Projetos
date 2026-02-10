@@ -1,0 +1,11 @@
+name,games,agentA_cfg,agentB_cfg,wins_A,wins_B,draws,win_rate_A,win_rate_B,avg_time_A_ms,avg_time_B_ms,avg_nodes_A,avg_nodes_B,avg_depth_A,avg_depth_B
+Minimax(d=2) vs Random,100,"{'type': 'minimax', 'max_depth': 2}",{'type': 'random'},100,0,0,1.0,0.0,1.3339079339214173,0.0013454421563114927,49.8928046989721,1,0,0.0
+Minimax(d=3) vs Random,100,"{'type': 'minimax', 'max_depth': 3}",{'type': 'random'},100,0,0,1.0,0.0,8.333384253560691,0.001475180981693774,337.0242165242165,1,0,0.0
+Minimax(d=4) vs Random,100,"{'type': 'minimax', 'max_depth': 4}",{'type': 'random'},100,0,0,1.0,0.0,58.70991974700663,0.0020168171522454118,2254.1586826347307,1,0,0.0
+Minimax(d=5) vs Random,100,"{'type': 'minimax', 'max_depth': 5}",{'type': 'random'},100,0,0,1.0,0.0,375.44781757752645,0.0024022955572447027,14738.05547652916,1,0,0.0
+AlphaBeta(d=2) vs Minimax(d=2),100,"{'type': 'alphabeta', 'max_depth': 2}","{'type': 'minimax', 'max_depth': 2}",44,48,8,0.44,0.48,0.989517464862169,0.9777462446744672,35.901497695852534,35.89291882556131,0,0
+AlphaBeta(d=3) vs Minimax(d=3),100,"{'type': 'alphabeta', 'max_depth': 3}","{'type': 'minimax', 'max_depth': 3}",47,44,9,0.47,0.44,4.362389484701155,7.380420434629306,177.72253129346313,278.64186369958276,0,0
+AlphaBeta(d=4) vs Minimax(d=4),100,"{'type': 'alphabeta', 'max_depth': 4}","{'type': 'minimax', 'max_depth': 4}",37,32,31,0.37,0.32,16.42860834072223,34.556285222530214,649.4193905817175,1298.3895671476137,0,0
+AlphaBeta(d=5) vs Minimax(d=5),100,"{'type': 'alphabeta', 'max_depth': 5}","{'type': 'minimax', 'max_depth': 5}",50,45,5,0.5,0.45,61.34424966559601,236.72159779345276,2529.7084673097534,8792.823497854077,0,0
+ID(time=1s) vs AlphaBeta(d=6),100,"{'type': 'id', 'max_depth': 6, 'max_time_ms': 1000}","{'type': 'alphabeta', 'max_depth': 6}",35,32,33,0.35,0.32,296.1433642280228,228.32959394248846,12281.019648397105,9432.440932642487,5.843329886246122,0
+ID(time=2s) vs AlphaBeta(d=6),100,"{'type': 'id', 'max_depth': 6, 'max_time_ms': 2000}","{'type': 'alphabeta', 'max_depth': 6}",35,36,29,0.35,0.36,295.81447478078604,222.8129479144029,12450.501043841336,9345.019832985387,5.84133611691023,0

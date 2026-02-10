@@ -1,0 +1,7 @@
+**/tp1-env/
+**/tp2-env/
+**/.env/
+**/venv/
+**/bin/
+**/lib/
+**/lib64/

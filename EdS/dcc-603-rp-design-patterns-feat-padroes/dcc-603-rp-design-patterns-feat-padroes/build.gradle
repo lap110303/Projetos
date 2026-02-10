@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'edu.ufmg.dcc'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    testImplementation 'org.mockito:mockito-all:1.10.19'
+    testRuntimeOnly 'org.mockito:mockito-all:1.10.19'
+
+    testImplementation "org.powermock:powermock-module-junit4:2.0.7"
+    testImplementation "org.powermock:powermock-module-junit4-rule:2.0.7"
+    testImplementation "org.powermock:powermock-api-mockito2:2.0.7"
+    testImplementation "org.powermock:powermock-classloading-xstream:1.6.6"
+
+    testRuntimeOnly "org.powermock:powermock-api-mockito2:2.0.7"
+    testRuntimeOnly "org.powermock:powermock-classloading-xstream:1.6.6"
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
