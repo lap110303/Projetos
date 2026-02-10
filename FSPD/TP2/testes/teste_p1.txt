@@ -1,0 +1,12 @@
+# Esta linha e outras semelhantes devem ser apenas ignoradas pelo cliente
+I 123 texto associado ao valor 123 (tudo mais nesta linha)
+I 10 DEZ
+I 100 CEM
+C 100
+I 100 MIL
+C 10
+C 1000
+C 100
+A
+C 123
+T

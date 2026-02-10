@@ -1,0 +1,116 @@
+A* eq UCS
+    Algorithm: astar
+    Heuristic: euclidian
+    Number of visited nodes: 34
+    Path length: 18
+    Path cost: 17.82842712474619
+
+    Algorithm: ucs
+    Heuristic: euclidian
+    Number of visited nodes: 53
+    Path length: 18
+    Path cost: 17.82842712474619
+
+A* melhor UCS
+    Algorithm: astar
+    Heuristic: euclidian
+    Number of visited nodes: 221
+    Path length: 42
+    Path cost: 43.485281374238554
+
+    Algorithm: ucs
+    Heuristic: euclidian
+    Number of visited nodes: 294
+    Path length: 42
+    Path cost: 43.485281374238554
+
+BFS eq UCS
+    Algorithm: bfs
+    Heuristic: euclidian
+    Number of visited nodes: 93
+    Path length: 19
+    Path cost: 20.07106781186548
+
+    Algorithm: ucs
+    Heuristic: euclidian
+    Number of visited nodes: 96
+    Path length: 19
+    Path cost: 20.071067811865476
+
+BFS não ótimo
+    Algorithm: bfs
+    Heuristic: euclidian
+    Number of visited nodes: 39
+    Path length: 20
+    Path cost: 163.0
+
+    Algorithm: astar
+    Heuristic: euclidian
+    Number of visited nodes: 28
+    Path length: 26
+    Path cost: 25.82842712474619
+
+DFS ótimo
+    Algorithm: dfs
+    Heuristic: euclidian
+    Number of visited nodes: 59
+    Path length: 58
+    Path cost: 58.656854249492376
+
+    Algorithm: astar
+    Heuristic: euclidian
+    Number of visited nodes: 61
+    Path length: 58
+    Path cost: 58.656854249492376
+
+Greedy não ótimo
+    Algorithm: greedy
+    Heuristic: euclidian
+    Number of visited nodes: 23
+    Path length: 23
+    Path cost: 168.48528137423858
+
+    Algorithm: astar
+    Heuristic: euclidian
+    Number of visited nodes: 22
+    Path length: 22
+    Path cost: 21.414213562373096
+
+Greedy ótimo
+    Algorithm: greedy
+    Heuristic: euclidian
+    Number of visited nodes: 17
+    Path length: 17
+    Path cost: 17.242640687119284
+
+    Algorithm: astar
+    Heuristic: euclidian
+    Number of visited nodes: 62
+    Path length: 17
+    Path cost: 17.242640687119284
+
+Mapa7 A* Diferença Euclidiana/Manhattan
+    Algorithm: astar
+    Heuristic: euclidian
+    Number of visited nodes: 95
+    Path length: 15
+    Path cost: 15.656854249492381
+
+    Algorithm: astar
+    Heuristic: manhattan
+    Number of visited nodes: 67
+    Path length: 15
+    Path cost: 15.656854249492381
+
+Mapa3 Greedy Diferença Euclidiana/Manhattan
+    Algorithm: greedy
+    Heuristic: euclidian
+    Number of visited nodes: 387
+    Path length: 50
+    Path cost: 54.798989873223334
+
+    Algorithm: greedy
+    Heuristic: manhattan
+    Number of visited nodes: 333
+    Path length: 50
+    Path cost: 54.798989873223334

@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package pares;
+
+// O serviço de armazenamento de pares
+service Pares {
+  // Insere ou atualiza um par (chave, valor)
+  rpc Insercao(MsgInsercao) returns (MsgRetorno);
+  // Consulta o valor associado a uma chave
+  rpc Consulta(MsgConsulta) returns (MsgValor);
+  // Ativa o registro no servidor central (Parte 2)
+  rpc Ativacao(MsgVazia) returns (MsgRetornoAtivacao);
+  // Termina a execução do servidor
+  rpc Termino(MsgVazia) returns (MsgRetornoTermino);
+}
+
+message MsgInsercao {
+  int32 chave = 1;
+  string valor = 2;
+}
+
+message MsgRetorno {
+  // 0 se a chave era nova, 1 se foi atualização
+  int32 retorno = 1;
+}
+
+message MsgConsulta {
+  int32 chave = 1;
+}
+
+message MsgValor {
+  // O valor associado, ou string vazia se não encontrado
+  string valor = 1;
+}
+
+message MsgVazia {}
+
+message MsgRetornoAtivacao {
+  // 0 (Parte 1) ou número de chaves registradas (Parte 2)
+  int32 retorno = 1;
+}
+
+message MsgRetornoTermino {
+  // Número total de chaves armazenadas
+  int32 retorno = 1;
+}
