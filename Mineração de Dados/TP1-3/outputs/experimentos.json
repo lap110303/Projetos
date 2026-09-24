@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2026-05-10T00:35:20",
+    "nome": "execucao_principal",
+    "algoritmo": "Apriori + FP-Growth",
+    "parametros": {
+      "min_support": 0.02,
+      "min_confidence": 0.6
+    },
+    "metricas": [
+      {
+        "algoritmo": "Apriori",
+        "n_itemsets": 13511,
+        "n_regras_brutas": 25174,
+        "tempo_segundos": 3.5207,
+        "confianca_media": 0.7933,
+        "lift_medio_bruto": 2.4129
+      },
+      {
+        "algoritmo": "FP-Growth",
+        "n_itemsets": 13511,
+        "n_regras_brutas": 25174,
+        "tempo_segundos": 0.9066,
+        "confianca_media": 0.7933,
+        "lift_medio_bruto": 2.4129
+      }
+    ],
+    "observacoes": "Execução principal com ambos os algoritmos para comparação."
+  }
+]

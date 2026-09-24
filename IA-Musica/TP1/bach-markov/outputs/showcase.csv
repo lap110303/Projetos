@@ -1,0 +1,7 @@
+id,order,tau,alpha,mode,key,seed,n_notes,longest_copy,copy_source,copy_ratio,phrases,phrase_len_sd,parallels,description,duration_s
+coral01,1,1.0,0.1,major,C,7,44,7,bwv94.8.mxl,0.159,5,7.65,0.023,ordem baixa: frases irregulares,37.4
+coral02,3,1.0,0.1,major,C,7,38,11,bwv329.mxl,0.289,5,1.5,0.027,configuração principal,37.5
+coral03,3,1.0,0.1,major,C,8,38,13,bwv281.krn,0.342,4,3.35,0.054,"mesma configuração, outra semente",35.7
+coral04,2,1.5,0.1,minor,D,3,43,7,bwv405.mxl,0.163,5,3.26,0.024,"modo menor, temperatura alta",35.8
+coral05,6,1.0,0.1,major,C,7,49,49,bwv399.mxl,1.0,6,1.21,0.021,ordem alta: memorização,44.9
+coral06,3,1.0,100.0,major,C,7,38,11,bwv329.mxl,0.289,5,1.5,0.054,harmonia quase sem memória (alpha alto),37.4

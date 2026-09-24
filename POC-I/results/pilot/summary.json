@@ -1,0 +1,50 @@
+{
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "cpus": 1,
+    "peak_rss_mb": 557.85546875,
+    "pilot_wall_minutes": 9.688456081816666,
+    "bytes_per_step_row": 7.054634615384615,
+    "bytes_per_rollout_row": 8.195004864018948
+  },
+  "projection": {
+    "A": {
+      "graphs": 2755,
+      "measured": 82,
+      "cpu_hours": 0.09880584361875533,
+      "cpu_hours_se": 0.0034825485635318807,
+      "graph_files_mb": 42.5340125,
+      "graph_files_mb_se": 1.982525757314076,
+      "step_rows": 5854000,
+      "steps_parquet_mb": 41.29783103846154
+    },
+    "S": {
+      "graphs": 63,
+      "measured": 19,
+      "cpu_hours": 0.13067348601694445,
+      "cpu_hours_se": 0.0023503635733977844,
+      "graph_files_mb": 60.051923,
+      "graph_files_mb_se": 1.5577937881375699,
+      "step_rows": 1428000,
+      "steps_parquet_mb": 10.07401823076923
+    },
+    "B": {
+      "graphs": 813,
+      "measured": 43,
+      "cpu_hours": 2.006720375501665,
+      "cpu_hours_se": 0.046159434478470755,
+      "rollout_rows": 858526.5,
+      "rollout_rows_se": 2774.7066061117166,
+      "rollouts_parquet_mb": 7.035628843389164
+    }
+  },
+  "args": {
+    "per_stratum_a": 2,
+    "per_stratum_b": 2,
+    "per_stratum_s": 3,
+    "seed": 2026
+  }
+}

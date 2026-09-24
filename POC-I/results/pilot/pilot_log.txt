@@ -1,0 +1,107 @@
+
+[camada A] 82 grafos medidos de 2755
+    10/82 ba_n150_m30_s1             0.03s  RSS pico 124 MB
+    20/82 er_n250_p0.50_s1           0.04s  RSS pico 129 MB
+    30/82 ba_n400_m3_s2              0.05s  RSS pico 135 MB
+    40/82 er_n500_p0.65_s4           0.11s  RSS pico 140 MB
+    50/82 ba_n650_m32_s0             0.14s  RSS pico 172 MB
+    60/82 er_n750_p0.70_s1           0.22s  RSS pico 181 MB
+    70/82 ba_n900_m180_s0            0.45s  RSS pico 241 MB
+    79/82 ba_n1000_m300_s0           0.64s  RSS pico 251 MB
+    80/82 er_n1000_p0.15_s3          0.25s  RSS pico 251 MB
+    82/82 er_n1000_p0.95_s0          0.34s  RSS pico 251 MB
+
+[camada S] 19 grafos medidos de 63
+    10/19 er_n5000_p0.20_s0          7.50s  RSS pico 309 MB
+    16/19 ba_n10000_m20_s0           6.34s  RSS pico 558 MB
+    19/19 er_n10000_p0.20_s0        34.02s  RSS pico 558 MB
+
+[camada B] 43 grafos medidos de 813
+     1/43 ba_n50_m10_s0               0.10s oráculo=8
+     2/43 ba_n50_m10_s1               0.12s oráculo=8
+     3/43 er_n50_p0.55_s2             0.13s oráculo=12
+     4/43 er_n50_p0.85_s1             0.12s oráculo=20
+     5/43 ba_n100_m5_s0               0.45s oráculo=5
+     6/43 ba_n100_m8_s0               0.50s oráculo=7
+     7/43 er_n100_p0.90_s1            0.60s oráculo=37
+     8/43 er_n100_p0.55_s1            0.49s oráculo=17
+     9/43 ba_n150_m5_s2               0.88s oráculo=5
+    10/43 ba_n150_m2_s0               1.04s oráculo=3
+    11/43 er_n150_p0.90_s0            1.46s oráculo=53
+    12/43 er_n150_p0.50_s0            1.56s oráculo=22
+    13/43 ba_n200_m2_s1               1.76s oráculo=3
+    14/43 ba_n200_m3_s1               2.07s oráculo=4
+    15/43 er_n200_p0.60_s2            2.74s oráculo=34
+    16/43 er_n200_p0.75_s0            2.85s oráculo=47
+    17/43 ba_n250_m50_s2              4.22s oráculo=23
+    18/43 ba_n250_m50_s1              4.46s oráculo=24
+    19/43 er_n250_p0.05_s2            3.28s oráculo=6
+    20/43 er_n250_p0.90_s2            5.37s oráculo=80
+    21/43 ba_n300_m8_s2               4.93s oráculo=7
+    22/43 ba_n300_m90_s1              7.15s oráculo=34
+    23/43 er_n300_p0.35_s0            7.69s oráculo=27
+    24/43 er_n300_p0.35_s2            7.29s oráculo=27
+    25/43 ba_n350_m18_s1              7.85s oráculo=11
+    26/43 ba_n350_m18_s0              7.28s oráculo=11
+    27/43 er_n350_p0.50_s2           11.53s oráculo=43
+    28/43 er_n350_p0.90_s0           12.44s oráculo=109
+    29/43 ba_n400_m8_s2               9.10s oráculo=7
+    30/43 ba_n400_m5_s0               8.90s oráculo=6
+    31/43 er_n400_p0.15_s0           12.63s oráculo=17
+    32/43 er_n400_p0.50_s1           16.47s oráculo=48
+    33/43 ba_n450_m5_s2              11.15s oráculo=6
+    34/43 ba_n450_m90_s1             18.47s oráculo=34
+    35/43 er_n450_p0.75_s2           24.01s oráculo=90
+    36/43 er_n450_p0.80_s0           24.23s oráculo=102
+    37/43 ba_n500_m25_s0             17.34s oráculo=14
+    38/43 ba_n500_m10_s2             15.10s oráculo=8
+    39/43 ba_n500_m150_s0            26.72s oráculo=55
+    40/43 er_n500_p0.85_s2           31.64s oráculo=126
+    41/43 er_n500_p0.55_s2           30.51s oráculo=65
+    42/43 er_n500_p0.95_s0           34.13s oráculo=179
+    43/43 er_n500_p0.50_s0           29.78s oráculo=58
+
+{
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "cpus": 1,
+    "peak_rss_mb": 557.85546875,
+    "pilot_wall_minutes": 9.688456081816666,
+    "bytes_per_step_row": 7.054634615384615,
+    "bytes_per_rollout_row": 8.195004864018948
+  },
+  "projection": {
+    "A": {
+      "graphs": 2755,
+      "measured": 82,
+      "cpu_hours": 0.09880584361875533,
+      "cpu_hours_se": 0.0034825485635318807,
+      "graph_files_mb": 42.5340125,
+      "graph_files_mb_se": 1.982525757314076,
+      "step_rows": 5854000,
+      "steps_parquet_mb": 41.29783103846154
+    },
+    "S": {
+      "graphs": 63,
+      "measured": 19,
+      "cpu_hours": 0.13067348601694445,
+      "cpu_hours_se": 0.0023503635733977844,
+      "graph_files_mb": 60.051923,
+      "graph_files_mb_se": 1.5577937881375699,
+      "step_rows": 1428000,
+      "steps_parquet_mb": 10.07401823076923
+    },
+    "B": {
+      "graphs": 813,
+      "measured": 43,
+      "cpu_hours": 2.006720375501665,
+      "cpu_hours_se": 0.046159434478470755,
+      "rollout_rows": 858526.5,
+      "rollout_rows_se": 2774.7066061117166,
+      "rollouts_parquet_mb": 7.035628843389164
+    }
+  }
+}
