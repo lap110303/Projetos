@@ -1,0 +1,4 @@
+Algoritmo,N° Clusters,Silhouette,Davies-Bouldin,Outliers detectados,Interpretabilidade,Uso na solução
+K-Means (k=4),4,0.1726,1.7243,N/A,Alta (centroides),Principal
+Hierárquico Ward (k=4),4,0.1236,1.9178,N/A,Alta (dendrograma),Comparação
+DBSCAN (eps=0.6),1,-,-,2794,Média (sem centroides),Auditoria de outliers

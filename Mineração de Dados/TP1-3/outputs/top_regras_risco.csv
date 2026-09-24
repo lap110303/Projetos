@@ -1,0 +1,21 @@
+antecedents,consequents,support,confidence,lift
+Contrato_Curto + Idade_Auge + injury_prone_No,transfer_risk_level_Medium,0.0671,1.0,3.9943
+Contrato_Curto + Idade_Jovem + injury_prone_No,transfer_risk_level_Medium,0.0646,1.0,3.9943
+Contrato_Curto + ValorMercado_Titular + injury_prone_No,transfer_risk_level_Medium,0.0393,1.0,3.9943
+Contrato_Medio + Idade_Jovem + injury_prone_No,transfer_risk_level_Low,0.0654,1.0,3.6794
+Contrato_Longo + Idade_Jovem + injury_prone_No,transfer_risk_level_Low,0.0714,1.0,3.6794
+Contrato_Longo + ValorMercado_Titular + injury_prone_No,transfer_risk_level_Low,0.0368,0.9279,3.4142
+Contrato_Curto + Status_Rotacao + ValorMercado_Titular,transfer_risk_level_Medium,0.0243,0.8293,3.3123
+Contrato_Medio + ValorMercado_Titular + injury_prone_No,transfer_risk_level_Low,0.0393,0.8943,3.2905
+Contrato_Medio + Idade_Auge + injury_prone_No,transfer_risk_level_Low,0.0654,0.8592,3.1611
+Contrato_Curto + Gols_p90_Medio + Idade_Jovem,transfer_risk_level_Medium,0.0214,0.7792,3.1124
+Contrato_Curto + Idade_Jovem + Potencial_Alto,transfer_risk_level_Medium,0.0325,0.7778,3.1067
+Contrato_Longo + Idade_Auge + injury_prone_No,transfer_risk_level_Low,0.0696,0.8442,3.106
+Contrato_Curto + Gols_p90_Alto + Idade_Auge,transfer_risk_level_Medium,0.0211,0.7763,3.1008
+Idade_Jovem + injury_prone_No + nationality_Argentina,transfer_risk_level_Low,0.0211,0.831,3.0575
+Assists_p90_Media + Contrato_Longo + Idade_Jovem,transfer_risk_level_Low,0.0243,0.8293,3.0512
+Contrato_Curto + Idade_Jovem + Status_Rotacao,transfer_risk_level_Medium,0.0357,0.7634,3.0491
+Assists_p90_Baixa + Contrato_Curto + ValorMercado_Titular,transfer_risk_level_Medium,0.0239,0.7528,3.0069
+Contrato_Curto + Idade_Auge + ValorMercado_Rotacao,transfer_risk_level_Medium,0.0304,0.7522,3.0046
+Contrato_Curto + Idade_Jovem + Overall_Medio,transfer_risk_level_Medium,0.0304,0.7522,3.0046
+Contrato_Curto + Gols_p90_Baixo + Idade_Auge,transfer_risk_level_Medium,0.0264,0.7475,2.9856

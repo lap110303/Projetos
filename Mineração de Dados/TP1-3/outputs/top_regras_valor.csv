@@ -1,0 +1,21 @@
+antecedents,consequents,support,confidence,lift
+Contrato_Curto + Idade_Auge + Overall_Alto,ValorMercado_Titular,0.0232,0.8904,5.6534
+Idade_Auge + Overall_Alto + transfer_risk_level_Medium,ValorMercado_Titular,0.0232,0.8904,5.6534
+Contrato_Medio + Idade_Auge + Overall_Alto,ValorMercado_Titular,0.0229,0.8649,5.4912
+Idade_Auge + Overall_Alto + injury_prone_No,ValorMercado_Titular,0.0504,0.8393,5.3288
+Assists_p90_Baixa + Idade_Auge + Overall_Alto,ValorMercado_Titular,0.0336,0.8393,5.3288
+Idade_Auge + Overall_Alto,ValorMercado_Titular,0.0646,0.8265,5.2475
+Idade_Auge + Overall_Alto + Potencial_Alto,ValorMercado_Titular,0.0646,0.8265,5.2475
+Gols_p90_Baixo + Idade_Auge + Overall_Alto,ValorMercado_Titular,0.0236,0.825,5.2381
+Contrato_Medio + Overall_Alto + transfer_risk_level_Low,ValorMercado_Titular,0.0268,0.8242,5.2329
+Idade_Auge + Potencial_Alto + transfer_risk_level_Medium,ValorMercado_Titular,0.0246,0.8214,5.2154
+Contrato_Curto + Idade_Auge + Potencial_Alto,ValorMercado_Titular,0.025,0.814,5.168
+Gols_p90_Medio + Idade_Auge + Overall_Alto,ValorMercado_Titular,0.0214,0.8108,5.148
+Idade_Auge + Overall_Alto + transfer_risk_level_Low,ValorMercado_Titular,0.0271,0.8,5.0794
+Assists_p90_Baixa + Overall_Alto + transfer_risk_level_Low,ValorMercado_Titular,0.0243,0.8,5.0794
+Idade_Jovem + Overall_Alto + Status_Rotacao,ValorMercado_Titular,0.0243,0.8,5.0794
+Overall_Alto + transfer_risk_level_Low,ValorMercado_Titular,0.0489,0.7965,5.0572
+Overall_Alto + Potencial_Alto + transfer_risk_level_Low,ValorMercado_Titular,0.0489,0.7965,5.0572
+Overall_Alto + injury_prone_No + transfer_risk_level_Low,ValorMercado_Titular,0.0489,0.7965,5.0572
+Overall_Alto + Status_Rotacao + transfer_risk_level_Low,ValorMercado_Titular,0.0264,0.7957,5.0521
+Idade_Auge + Overall_Alto + Status_Rotacao,ValorMercado_Titular,0.0343,0.7934,5.0374

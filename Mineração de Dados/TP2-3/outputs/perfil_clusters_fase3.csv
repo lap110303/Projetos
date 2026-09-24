@@ -1,0 +1,5 @@
+cluster_kmeans,age,overall_rating,growth_margin,matches_played,goals_per_90,assists_per_90,contract_years_left,transfer_risk_level_encoded,market_value_log,market_value_million_eur
+0,33.0,68.0,1.0,24.0,0.137,0.141,2.0,3.0,1.411,3.1
+1,20.0,77.0,7.0,25.0,0.128,0.163,3.0,1.0,2.542,11.7
+2,26.0,77.5,2.0,35.0,1.698,0.47,3.0,2.0,2.23,8.3
+3,31.0,86.0,1.0,29.0,0.146,0.198,2.0,3.0,2.398,10.0

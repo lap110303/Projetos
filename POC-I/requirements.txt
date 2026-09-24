@@ -1,0 +1,7 @@
+# Versões fixadas: o gerador aleatório do networkx pode mudar entre versões,
+# o que alteraria os grafos gerados a partir de uma mesma semente.
+networkx==3.6.1
+numpy==2.4.4
+pandas==3.0.2
+pyarrow==25.0.1
+pytest==9.1.1
