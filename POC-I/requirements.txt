@@ -5,3 +5,7 @@ numpy==2.4.4
 pandas==3.0.2
 pyarrow==25.0.1
 pytest==9.1.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+# notebooks (notebooks/eda.ipynb)
+jupyterlab==4.6.4

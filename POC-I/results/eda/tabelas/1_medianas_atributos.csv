@@ -1,0 +1,14 @@
+atributo,Barabási–Albert,Erdős–Rényi
+nº de vértices (`n`),550.0,525.0
+nº de arestas (`m`),4725.0,49403.0
+densidade (`density`),0.06220080321285141,0.4999310868270137
+grau mínimo (`deg_min`),8.0,171.0
+grau máximo (`deg_max`),120.0,232.5
+grau médio (`deg_mean`),18.0,199.744
+desvio do grau (`deg_std`),14.211293135923828,8.923129801739591
+coef. de variação do grau (`deg_cv`),0.7421769984862129,0.047888553665587835
+grau máximo / grau médio (`deg_max_ratio`),4.901960784313726,1.1411479266424362
+agrupamento médio (`avg_clustering`),0.14869337679863995,0.49987875418421956
+agrupamento / densidade (`clust_ratio`),2.2902503921559143,0.9999973254946912
+degenerescência (`degeneracy`),10.0,177.0
+degenerescência / grau máximo (`degen_ratio`),0.10638297872340426,0.7774674911056908

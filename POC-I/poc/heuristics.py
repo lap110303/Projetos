@@ -191,59 +191,6 @@ def rlf(A: np.ndarray) -> ColoringResult:
 
 
 def rlf_complete(s: ColoringState) -> int:
-    """Completa IN PLACE o estado parcial `s` seguindo o RLF e retorna o nº de cores.
-
-    Produz exatamente a mesma sequência que aplicar `rlf_choice` passo a passo
-    (verificado nos testes), mas mantém as contagens |N(u)∩U| e |N(u)∩W|
-    incrementalmente dentro de cada classe, como a função `rlf`. É usada como
-    política-base dos rollouts, a partir de estados parciais arbitrários.
-    """
-    A, n = s.A, s.n
-    while not s.done:
-        nc, unc = s.n_colors, s.uncolored
-        if nc:
-            rows = (~s.has[:nc] & unc).any(axis=1)
-            k = int(np.argmax(rows)) if rows.any() else nc
-        else:
-            k = 0
-        U = unc & ~s.has[k]
-        if k == nc:                                  # classe nova: maior grau não colorido
-            v = _masked_argmax(s.udeg.astype(np.int64), U)
-        else:
-            v = -1
-        W = unc & s.has[k]
-        n_u = A[:, U].sum(axis=1, dtype=np.int64)
-        n_w = A[:, W].sum(axis=1, dtype=np.int64)
-        while True:
-            if v < 0:
-                v = _masked_argmax(n_w * (n + 1) + (n - n_u), U)
-            s.assign(v, k)
-            U[v] = False
-            row = A[v]
-            n_u -= row
-            moved = row & U                          # vizinhos de v saem de U para W
-            if moved.any():
-                U &= ~moved
-                cnt = A[moved].sum(axis=0)
-                n_u -= cnt
-                n_w += cnt
-            if not U.any():
-                break
-            v = -1
-    return s.n_colors
-
-
-def dsatur_complete(s: ColoringState) -> int:
-    """Completa IN PLACE o estado parcial `s` seguindo o DSATUR e retorna o nº de cores."""
-    while not s.done:
-        s.assign(dsatur_choice(s))
-    return s.n_colors
-
-
-COMPLETERS = {"dsatur": dsatur_complete, "rlf": rlf_complete}
-
-
-def rlf_complete(s: ColoringState) -> int:
     """Completa, IN PLACE, a coloração do estado `s` com a regra do RLF.
 
     Produz exatamente a mesma sequência que aplicar `rlf_choice` passo a passo

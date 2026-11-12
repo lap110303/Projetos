@@ -1,0 +1,12 @@
+# PyTorch: para GPU NVIDIA instale antes a versão CUDA, ex.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+torch>=2.5
+miditok>=3.0.4
+symusic>=0.5
+muspy>=0.5.0
+pretty_midi>=0.2.10
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.8
+pytest>=8.0

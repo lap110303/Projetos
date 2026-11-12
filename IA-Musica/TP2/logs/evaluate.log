@@ -1,0 +1,12 @@
+métrica                               teste                    transformer                         markov
+pitch_range                   34.351± 2.729  36.030± 3.195 OA=0.94 KL=0.033  39.025± 6.182 OA=0.60 KL=0.476
+n_pitch_classes_used          10.545± 1.100  10.975± 0.935 OA=0.84 KL=0.131  11.395± 1.606 OA=0.90 KL=0.055
+pitch_class_entropy            3.026± 0.102   3.029± 0.081 OA=0.92 KL=0.030   3.403± 0.336 OA=0.20 KL=1.843
+scale_consistency              0.930± 0.035   0.930± 0.028 OA=0.92 KL=0.029   0.688± 0.080 OA=0.09 KL=2.828
+polyphony                      3.922± 0.041   3.803± 0.106 OA=0.44 KL=0.878   4.285± 1.000 OA=0.15 KL=2.343
+empty_beat_rate                0.035± 0.026   0.040± 0.026 OA=0.96 KL=0.018   0.082± 0.069 OA=0.68 KL=0.364
+groove_consistency             0.998± 0.000   0.999± 0.000 OA=0.93 KL=0.018   0.998± 0.000 OA=0.93 KL=0.032
+n_bars                        15.857± 5.997  15.505± 5.728 OA=0.95 KL=0.021  13.075±11.619 OA=0.68 KL=0.256
+test: erro sintático = 0.0000  n = 77
+transformer: erro sintático = 0.0000  n = 200
+markov: erro sintático = 0.0000  n = 200

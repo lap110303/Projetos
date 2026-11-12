@@ -1,0 +1,139 @@
+{
+  "A_best_share": {
+    "random": 0.001088929219600726,
+    "welsh_powell": 0.033756805807622504,
+    "dsatur": 0.3822141560798548,
+    "rlf": 0.7655172413793103
+  },
+  "A_winner_share": {
+    "DSATUR": 0.23448275862068965,
+    "RLF": 0.6177858439201452,
+    "empate DSATUR = RLF": 0.14773139745916516
+  },
+  "ER_p_rlf_majority": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "top_mi_features": [
+    "deg_cv",
+    "clust_ratio",
+    "degeneracy"
+  ],
+  "redundant_blocks": [
+    [
+      "m",
+      "deg_min",
+      "deg_mean",
+      "degeneracy"
+    ],
+    [
+      "density",
+      "avg_clustering"
+    ],
+    [
+      "deg_cv",
+      "deg_max_ratio",
+      "degen_ratio"
+    ]
+  ],
+  "mi_by_model_top": {
+    "ER": "deg_max",
+    "BA": "deg_min"
+  },
+  "S_er_rlf_better": 1.0,
+  "pace": {
+    "BA 10%": {
+      "Aleatória": 0.2591580377739918,
+      "Welsh-Powell": 0.8820245167303901,
+      "DSATUR": 0.965437267926686,
+      "RLF": 0.14692527542956027
+    },
+    "BA 25%": {
+      "Aleatória": 0.4177264052066797,
+      "Welsh-Powell": 0.9561250445120462,
+      "DSATUR": 0.9946657787922475,
+      "RLF": 0.23189245419408053
+    },
+    "BA 50%": {
+      "Aleatória": 0.6464275377541958,
+      "Welsh-Powell": 0.9863870782015122,
+      "DSATUR": 0.9994070734797552,
+      "RLF": 0.45197154037375886
+    },
+    "ER 10%": {
+      "Aleatória": 0.1939042434300472,
+      "Welsh-Powell": 0.2390995090711453,
+      "DSATUR": 0.35113510080492055,
+      "RLF": 0.1113551260985462
+    },
+    "ER 25%": {
+      "Aleatória": 0.3509081155136403,
+      "Welsh-Powell": 0.41942301563847884,
+      "DSATUR": 0.5472030207085801,
+      "RLF": 0.24149610854182024
+    },
+    "ER 50%": {
+      "Aleatória": 0.5952432267254845,
+      "Welsh-Powell": 0.670190322956603,
+      "DSATUR": 0.7973320496630084,
+      "RLF": 0.48409592411139124
+    }
+  },
+  "B_steps": 227100,
+  "B_informative_share": 0.5864156759136944,
+  "B_label1_all": 0.6556259388208991,
+  "B_label1_informative": 0.4265651690861534,
+  "B_informative_by_model": {
+    "ba": 0.061037668798862826,
+    "er": 0.8222073365231259
+  },
+  "B_oracle_follows": {
+    "todos": {
+      "Aleatória": 0.023386173491853807,
+      "Welsh-Powell": 0.06868339938353149,
+      "DSATUR": 0.6193394980184941,
+      "RLF": 0.41154117129018053
+    },
+    "informativos": {
+      "Aleatória": 0.01106814342031162,
+      "Welsh-Powell": 0.03361742068706589,
+      "DSATUR": 0.35086915712408484,
+      "RLF": 0.6604693073024216
+    },
+    "triviais": {
+      "Aleatória": 0.04085174341229705,
+      "Welsh-Powell": 0.11840298110194304,
+      "DSATUR": 1.0,
+      "RLF": 0.05858929997338302
+    }
+  },
+  "B_hit_informative": {
+    "random": 0.21865965834428383,
+    "welsh_powell": 0.2643439083912146,
+    "dsatur": 0.35086915712408484,
+    "rlf": 0.882778299230336
+  },
+  "B_uniform_informative": 0.42803266378824856,
+  "B_best_rule": [
+    "seguir RLF",
+    0.882778299230336
+  ],
+  "B_oracle_better_share": 0.5510455104551045,
+  "B_oracle_worse_than_min_dr": 0
+}

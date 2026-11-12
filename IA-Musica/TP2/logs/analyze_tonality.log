@@ -1,0 +1,15 @@
+test {'n': 77, 'same_key_first_last': 0.5194805194805194, 'ends_on_tonic_of_opening_key': 0.6883116883116883, 'ends_on_tonic_of_final_key': 0.6883116883116883, 'frac_onsets_4_voices': 0.9224668666124223}
+transformer {'n': 200, 'same_key_first_last': 0.46, 'ends_on_tonic_of_opening_key': 0.355, 'ends_on_tonic_of_final_key': 0.515, 'frac_onsets_4_voices': 0.6187075848182363}
+markov {'n': 200, 'same_key_first_last': 0.37, 'ends_on_tonic_of_opening_key': 0.225, 'ends_on_tonic_of_final_key': 0.39, 'frac_onsets_4_voices': 0.17746496954225022}
+transformer_000.mid {'key': 'C maior', 'stable': False, 'first': 'C maior', 'last': 'F maior', 'final_bass_is_tonic_of_last': False, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.42948717948717946}
+transformer_001.mid {'key': 'E maior', 'stable': True, 'first': 'E maior', 'last': 'E maior', 'final_bass_is_tonic_of_last': False, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.6875}
+transformer_002.mid {'key': 'B maior', 'stable': True, 'first': 'B maior', 'last': 'B maior', 'final_bass_is_tonic_of_last': False, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.546875}
+transformer_003.mid {'key': 'Bb maior', 'stable': True, 'first': 'Bb maior', 'last': 'Bb maior', 'final_bass_is_tonic_of_last': False, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.4303030303030303}
+transformer_004.mid {'key': 'Ab maior', 'stable': True, 'first': 'Ab maior', 'last': 'Ab maior', 'final_bass_is_tonic_of_last': True, 'final_bass_is_tonic_of_first': True, 'frac_onsets_4_voices': 0.6557377049180327}
+markov_000.mid {'key': 'B maior', 'stable': False, 'first': 'Ab menor', 'last': 'B menor', 'final_bass_is_tonic_of_last': True, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.20618556701030927}
+markov_001.mid {'key': 'Ab maior', 'stable': False, 'first': 'C menor', 'last': 'C# menor', 'final_bass_is_tonic_of_last': False, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.16981132075471697}
+markov_002.mid {'key': 'F# menor', 'stable': False, 'first': 'Eb menor', 'last': 'A maior', 'final_bass_is_tonic_of_last': True, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.208955223880597}
+markov_003.mid {'key': 'Ab menor', 'stable': False, 'first': 'Eb maior', 'last': 'C# menor', 'final_bass_is_tonic_of_last': False, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.25}
+markov_004.mid {'key': 'F# maior', 'stable': False, 'first': 'Bb menor', 'last': 'F# maior', 'final_bass_is_tonic_of_last': True, 'final_bass_is_tonic_of_first': False, 'frac_onsets_4_voices': 0.22807017543859648}
+test_000.mid {'key': 'F maior', 'stable': True, 'first': 'F maior', 'last': 'F maior', 'final_bass_is_tonic_of_last': True, 'final_bass_is_tonic_of_first': True, 'frac_onsets_4_voices': 0.8375}
+test_001.mid {'key': 'A maior', 'stable': True, 'first': 'A maior', 'last': 'A maior', 'final_bass_is_tonic_of_last': True, 'final_bass_is_tonic_of_first': True, 'frac_onsets_4_voices': 0.9634146341463414}

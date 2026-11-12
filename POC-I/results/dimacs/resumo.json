@@ -1,0 +1,86 @@
+{
+  "instancias": 127,
+  "chi_conhecido": 69,
+  "politica_vs_melhor": {
+    "melhor": 1,
+    "empate": 114,
+    "pior": 12,
+    "delta_medio": 0.16535433070866143
+  },
+  "vs": {
+    "melhor heurística": {
+      "política melhor": 0.007874015748031496,
+      "empate": 0.8976377952755905,
+      "política pior": 0.09448818897637795,
+      "Δ médio (cores)": 0.16535433070866143
+    },
+    "RLF": {
+      "política melhor": 0.023622047244094488,
+      "empate": 0.905511811023622,
+      "política pior": 0.07086614173228346,
+      "Δ médio (cores)": 0.06299212598425197
+    },
+    "DSATUR": {
+      "política melhor": 0.33070866141732286,
+      "empate": 0.6299212598425197,
+      "política pior": 0.03937007874015748,
+      "Δ médio (cores)": -1.4251968503937007
+    }
+  },
+  "otimo": {
+    "Aleatória": {
+      "atinge χ": 0.37681159420289856,
+      "excesso médio (%)": 0.34700659783500243
+    },
+    "Welsh-Powell": {
+      "atinge χ": 0.5072463768115942,
+      "excesso médio (%)": 0.2827758041738997
+    },
+    "DSATUR": {
+      "atinge χ": 0.5652173913043478,
+      "excesso médio (%)": 0.19611562266024507
+    },
+    "RLF": {
+      "atinge χ": 0.6376811594202898,
+      "excesso médio (%)": 0.1255225848818526
+    },
+    "política aprendida": {
+      "atinge χ": 0.6376811594202898,
+      "excesso médio (%)": 0.12706847860165937
+    }
+  },
+  "heuristicas": {
+    "Aleatória": {
+      "melhor c/ empate": 0.2440944881889764,
+      "melhor sozinha": 0.0,
+      "% acima da melhor (média)": 0.23172135381315018
+    },
+    "Welsh-Powell": {
+      "melhor c/ empate": 0.4645669291338583,
+      "melhor sozinha": 0.0,
+      "% acima da melhor (média)": 0.1618513911720226
+    },
+    "DSATUR": {
+      "melhor c/ empate": 0.6141732283464567,
+      "melhor sozinha": 0.047244094488188976,
+      "% acima da melhor (média)": 0.056998492081170166
+    },
+    "RLF": {
+      "melhor c/ empate": 0.952755905511811,
+      "melhor sozinha": 0.3779527559055118,
+      "% acima da melhor (média)": 0.005501473877030194
+    }
+  },
+  "oraculo": {
+    "n": 89,
+    "melhor_que_heuristica": 0.23595505617977527,
+    "ganho_medio": 0.5393258426966292,
+    "politica_menos_oraculo": 0.6179775280898876
+  },
+  "modelo_sha256": [
+    "6bf39632ff60205694c2a8f236d6bf8b6fe4c47a38e68e48ea9e27ac43a4d96d"
+  ],
+  "ambiente": {
+    "python": "3.13.7"
+  }
+}

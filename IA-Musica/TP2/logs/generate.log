@@ -1,0 +1,10 @@
+  transformer 50/200  45s
+  transformer 100/200  74s
+  transformer 150/200  198s
+  transformer 200/200  239s
+transformer {"system": "transformer", "n": 200, "temperature": 1.0, "top_k": 0, "top_p": 0.95, "max_tokens": 2600, "batch": 50, "seed": 123, "subdir": "eval", "time_s": 239.3373749256134, "mean_len": 593.66, "hit_max_tokens": 1, "empty_outputs": 0}
+  markov (n=5) 50/200  13s
+  markov (n=5) 100/200  20s
+  markov (n=5) 150/200  26s
+  markov (n=5) 200/200  32s
+markov {"system": "markov", "n": 200, "temperature": 1.0, "top_k": 0, "top_p": 0.95, "max_tokens": 2600, "batch": 50, "seed": 123, "subdir": "eval", "time_s": 31.955708503723145, "mean_len": 453.78, "hit_max_tokens": 1, "empty_outputs": 0}
