@@ -1,0 +1,203 @@
+{
+  "step_accuracy": {
+    "Gradient boosting": {
+      "acerto geral": 0.9721843859774895,
+      "acerto ER": 0.9719028429886503,
+      "acerto BA": 0.9811542991755006,
+      "acerto no treino": 0.9833486896473114,
+      "AUC (candidatos)": 0.8768455042064154,
+      "tempo de treino (s)": 13.621705199999269
+    },
+    "Regressão logística": {
+      "acerto geral": 0.9314287762563624,
+      "acerto ER": 0.936744426781027,
+      "acerto BA": 0.7620730270906949,
+      "acerto no treino": 0.9296807469817719,
+      "AUC (candidatos)": 0.8418906527305596,
+      "tempo de treino (s)": 4.199003699999594
+    },
+    "min(avail_color), desempate por prioridade": {
+      "acerto geral": 0.8990967094415371,
+      "acerto ER": 0.9076860512403416,
+      "acerto BA": 0.6254416961130742,
+      "acerto no treino": NaN,
+      "AUC (candidatos)": NaN,
+      "tempo de treino (s)": NaN
+    },
+    "seguir RLF": {
+      "acerto geral": 0.892967237794824,
+      "acerto ER": 0.9025472291027394,
+      "acerto BA": 0.5877502944640753,
+      "acerto no treino": NaN,
+      "AUC (candidatos)": NaN,
+      "tempo de treino (s)": NaN
+    },
+    "candidato ao acaso": {
+      "acerto geral": 0.4281071522450832,
+      "acerto ER": 0.42009870974897406,
+      "acerto BA": 0.6832548095798979,
+      "acerto no treino": NaN,
+      "AUC (candidatos)": NaN,
+      "tempo de treino (s)": NaN
+    },
+    "seguir DSATUR": {
+      "acerto geral": 0.3242167897340311,
+      "acerto ER": 0.3033753558357056,
+      "acerto BA": 0.9882214369846879,
+      "acerto no treino": NaN,
+      "AUC (candidatos)": NaN,
+      "tempo de treino (s)": NaN
+    },
+    "seguir Welsh-Powell": {
+      "acerto geral": 0.27525270628718906,
+      "acerto ER": 0.26359569669858407,
+      "acerto BA": 0.6466431095406361,
+      "acerto no treino": NaN,
+      "AUC (candidatos)": NaN,
+      "tempo de treino (s)": NaN
+    },
+    "seguir Aleatória": {
+      "acerto geral": 0.22352856835615456,
+      "acerto ER": 0.21276202447410256,
+      "acerto BA": 0.5665488810365136,
+      "acerto no treino": NaN,
+      "AUC (candidatos)": NaN,
+      "tempo de treino (s)": NaN
+    }
+  },
+  "best_model": "Gradient boosting",
+  "top_features": [
+    "by_rlf",
+    "avail_rel",
+    "uncolored_nb",
+    "avail_color_rank",
+    "opens_new_color_rank"
+  ],
+  "policy_B": {
+    "Regressão logística|geral": {
+      "n": 163,
+      "< melhor heurística": 0.0,
+      "= melhor": 0.8343558282208589,
+      "> melhor": 0.1656441717791411,
+      "Δ médio vs melhor": 0.1901840490797546,
+      "Δ médio vs RLF": 0.0,
+      "Δ médio vs DSATUR": -2.1717791411042944,
+      "Δ médio vs oráculo": 1.3558282208588956
+    },
+    "Regressão logística|ER": {
+      "n": 116,
+      "< melhor heurística": 0.0,
+      "= melhor": 0.9913793103448276,
+      "> melhor": 0.008620689655172414,
+      "Δ médio vs melhor": 0.008620689655172414,
+      "Δ médio vs RLF": 0.0,
+      "Δ médio vs DSATUR": -3.310344827586207,
+      "Δ médio vs oráculo": 1.5603448275862069
+    },
+    "Regressão logística|BA": {
+      "n": 47,
+      "< melhor heurística": 0.0,
+      "= melhor": 0.44680851063829785,
+      "> melhor": 0.5531914893617021,
+      "Δ médio vs melhor": 0.6382978723404256,
+      "Δ médio vs RLF": 0.0,
+      "Δ médio vs DSATUR": 0.6382978723404256,
+      "Δ médio vs oráculo": 0.851063829787234
+    },
+    "Gradient boosting|geral": {
+      "n": 163,
+      "< melhor heurística": 0.018404907975460124,
+      "= melhor": 0.9570552147239264,
+      "> melhor": 0.024539877300613498,
+      "Δ médio vs melhor": 0.006134969325153374,
+      "Δ médio vs RLF": -0.18404907975460122,
+      "Δ médio vs DSATUR": -2.355828220858896,
+      "Δ médio vs oráculo": 1.1717791411042944
+    },
+    "Gradient boosting|ER": {
+      "n": 116,
+      "< melhor heurística": 0.017241379310344827,
+      "= melhor": 0.9741379310344828,
+      "> melhor": 0.008620689655172414,
+      "Δ médio vs melhor": -0.008620689655172414,
+      "Δ médio vs RLF": -0.017241379310344827,
+      "Δ médio vs DSATUR": -3.3275862068965516,
+      "Δ médio vs oráculo": 1.543103448275862
+    },
+    "Gradient boosting|BA": {
+      "n": 47,
+      "< melhor heurística": 0.02127659574468085,
+      "= melhor": 0.9148936170212766,
+      "> melhor": 0.06382978723404255,
+      "Δ médio vs melhor": 0.0425531914893617,
+      "Δ médio vs RLF": -0.5957446808510638,
+      "Δ médio vs DSATUR": 0.0425531914893617,
+      "Δ médio vs oráculo": 0.2553191489361702
+    }
+  },
+  "generalization": {
+    "Barabási–Albert|n > 500 (fora da faixa)": {
+      "grafos": 90,
+      "< melhor heurística": 0.011111111111111112,
+      "= melhor": 0.8777777777777778,
+      "> melhor": 0.1111111111111111,
+      "Δ médio vs melhor": 0.1111111111111111,
+      "Δ% médio vs melhor": 0.016826577397128003,
+      "Δ médio vs RLF": -1.211111111111111,
+      "Δ médio vs DSATUR": 0.1111111111111111,
+      "tempo médio política (s)": 9.135664602222176,
+      "tempo médio RLF (s)": 0.039531396665713855
+    },
+    "Barabási–Albert|n ≤ 500 (faixa do treino)": {
+      "grafos": 81,
+      "< melhor heurística": 0.0,
+      "= melhor": 0.9012345679012346,
+      "> melhor": 0.09876543209876543,
+      "Δ médio vs melhor": 0.12345679012345678,
+      "Δ% médio vs melhor": 0.01912992357436802,
+      "Δ médio vs RLF": -0.7654320987654321,
+      "Δ médio vs DSATUR": 0.1111111111111111,
+      "tempo médio política (s)": 3.141046299999648,
+      "tempo médio RLF (s)": 0.007543693824073322
+    },
+    "Erdős–Rényi|n > 500 (fora da faixa)": {
+      "grafos": 190,
+      "< melhor heurística": 0.04736842105263158,
+      "= melhor": 0.8894736842105263,
+      "> melhor": 0.06315789473684211,
+      "Δ médio vs melhor": 0.005263157894736842,
+      "Δ% médio vs melhor": -6.661080036000558e-05,
+      "Δ médio vs RLF": 0.005263157894736842,
+      "Δ médio vs DSATUR": -8.278947368421052,
+      "tempo médio política (s)": 8.84156394999989,
+      "tempo médio RLF (s)": 0.08567449368205608
+    },
+    "Erdős–Rényi|n ≤ 500 (faixa do treino)": {
+      "grafos": 190,
+      "< melhor heurística": 0.005263157894736842,
+      "= melhor": 0.9526315789473684,
+      "> melhor": 0.042105263157894736,
+      "Δ médio vs melhor": 0.042105263157894736,
+      "Δ% médio vs melhor": 0.00391130808099844,
+      "Δ médio vs RLF": 0.005263157894736842,
+      "Δ médio vs DSATUR": -3.0842105263157893,
+      "tempo médio política (s)": 2.9985459673684858,
+      "tempo médio RLF (s)": 0.011313026312640624
+    }
+  },
+  "environment": {
+    "python": "3.13.7",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2"
+  },
+  "args": {
+    "data": "C:\\Users\\lap11\\OneDrive\\Área de Trabalho\\CC\\POC-I\\data",
+    "out": "C:\\Users\\lap11\\OneDrive\\Área de Trabalho\\CC\\POC-I\\results\\poc_modelo",
+    "workers": "8",
+    "heldout_seed": "3",
+    "val_frac": "0.2",
+    "overwrite_model": "False"
+  },
+  "minutes": 11.616179356666665
+}

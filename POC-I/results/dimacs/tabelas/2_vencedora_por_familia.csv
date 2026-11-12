@@ -1,0 +1,19 @@
+família,DSATUR,RLF,empate DSATUR = RLF
+C (aleatório),0,2,0
+DSJC (aleatório),0,10,2
+DSJR (geométrico),1,1,1
+GPIA,1,3,1
+Insertions/FullIns,0,0,25
+Mycielski,0,0,5
+alocação de registradores,0,0,14
+flat (Culberson),0,6,0
+frequências (wap),2,3,3
+horário escolar,1,1,0
+jogos (SGB),0,0,1
+le450 (Leighton),1,7,4
+livros (SGB),0,0,5
+milhas (SGB),0,0,5
+mug,0,0,4
+quadrado latino,0,1,0
+quasigrupos,0,4,0
+rainhas (SGB),0,11,2

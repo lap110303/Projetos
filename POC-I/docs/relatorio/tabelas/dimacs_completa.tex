@@ -1,0 +1,161 @@
+{\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}lrrrrrrrrrr@{}}
+\caption{Resultados por instância do DIMACS. Al.\ = ordem aleatória, WP = Welsh-Powell, DS = DSATUR, Or.\ = oráculo por rollout ($n \le 500$), Pol.\ = política aprendida; $t$ = tempo da política. Em negrito, a melhor heurística e a política quando usa menos cores que ela; em itálico, a política quando usa mais.}\label{tab:dimacs_completa}\\
+\toprule
+Instância & $n$ & $m$ & $\chi$ & Al. & WP & DS & RLF & Or. & Pol. & $t$ (s) \\
+\midrule
+\endfirsthead
+\toprule
+Instância & $n$ & $m$ & $\chi$ & Al. & WP & DS & RLF & Or. & Pol. & $t$ (s) \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\multicolumn{11}{@{}l}{\emph{C (aleatório)}} \\
+C2000.5 & 2000 & 999836 & -- & 225 & 219 & 207 & \textbf{193} & -- & 193 & 26{,}5 \\
+C4000.5 & 4000 & 4000268 & -- & 399 & 394 & 376 & \textbf{358} & -- & 358 & 70{,}5 \\
+\multicolumn{11}{@{}l}{\emph{DSJC (aleatório)}} \\
+DSJC125.1 & 125 & 736 & -- & 8 & 7 & \textbf{6} & \textbf{6} & 6 & 6 & 1{,}3 \\
+DSJC125.5 & 125 & 3891 & -- & 25 & 23 & 23 & \textbf{20} & 20 & 20 & 1{,}2 \\
+DSJC125.9 & 125 & 6961 & -- & 60 & 53 & \textbf{50} & \textbf{50} & 46 & 50 & 1{,}5 \\
+DSJC250.1 & 250 & 3218 & -- & 13 & 11 & 10 & \textbf{9} & 9 & 9 & 2{,}6 \\
+DSJC250.5 & 250 & 15668 & -- & 42 & 41 & 37 & \textbf{34} & 34 & 34 & 1{,}9 \\
+DSJC250.9 & 250 & 27897 & -- & 98 & 93 & 90 & \textbf{83} & 81 & 83 & 3{,}3 \\
+DSJC500.1 & 500 & 12458 & -- & 19 & 18 & 16 & \textbf{15} & 14 & 15 & 5{,}7 \\
+DSJC500.5 & 500 & 62624 & -- & 72 & 71 & 65 & \textbf{59} & 58 & 59 & 6{,}2 \\
+DSJC500.9 & 500 & 112437 & -- & 179 & 169 & 163 & \textbf{154} & 148 & 154 & 5{,}3 \\
+DSJC1000.1 & 1000 & 49629 & -- & 32 & 29 & 25 & \textbf{24} & -- & 24 & 12{,}3 \\
+DSJC1000.5 & 1000 & 249826 & -- & 129 & 121 & 114 & \textbf{106} & -- & 106 & 12{,}6 \\
+DSJC1000.9 & 1000 & 449449 & -- & 319 & 313 & 301 & \textbf{277} & -- & 277 & 12{,}5 \\
+\multicolumn{11}{@{}l}{\emph{DSJR (geométrico)}} \\
+DSJR500.1 & 500 & 3555 & -- & 14 & \textbf{13} & 14 & \textbf{13} & 12 & 13 & 5{,}9 \\
+DSJR500.1c & 500 & 121275 & -- & 109 & 100 & \textbf{88} & 89 & 88 & \textit{89} & 5{,}4 \\
+DSJR500.5 & 500 & 58862 & -- & 145 & 134 & \textbf{132} & \textbf{132} & 128 & 132 & 5{,}5 \\
+\multicolumn{11}{@{}l}{\emph{GPIA}} \\
+ash331GPIA & 662 & 4181 & -- & 7 & 10 & 6 & \textbf{4} & -- & 4 & 7{,}9 \\
+will199GPIA & 701 & 6772 & -- & 11 & 10 & \textbf{7} & \textbf{7} & -- & 7 & 8{,}2 \\
+ash608GPIA & 1216 & 7844 & -- & 7 & 10 & 6 & \textbf{5} & -- & 5 & 18{,}6 \\
+abb313GPIA & 1557 & 53356 & -- & 16 & 15 & \textbf{10} & 11 & -- & \textit{13} & 23{,}7 \\
+ash958GPIA & 1916 & 12506 & -- & 7 & 10 & 6 & \textbf{5} & -- & 5 & 28{,}0 \\
+\multicolumn{11}{@{}l}{\emph{Insertions/FullIns}} \\
+1-FullIns\_3 & 30 & 100 & -- & 5 & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 0{,}3 \\
+2-Insertions\_3 & 37 & 72 & 4 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 0{,}4 \\
+2-FullIns\_3 & 52 & 201 & -- & \textbf{5} & \textbf{5} & \textbf{5} & \textbf{5} & 5 & 5 & 0{,}6 \\
+3-Insertions\_3 & 56 & 110 & 4 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 0{,}6 \\
+1-Insertions\_4 & 67 & 232 & 4 & 6 & \textbf{5} & \textbf{5} & \textbf{5} & 5 & 5 & 0{,}8 \\
+4-Insertions\_3 & 79 & 156 & 3 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 0{,}9 \\
+3-FullIns\_3 & 80 & 346 & -- & \textbf{6} & \textbf{6} & \textbf{6} & \textbf{6} & 6 & 6 & 1{,}0 \\
+1-FullIns\_4 & 93 & 593 & -- & 7 & \textbf{5} & \textbf{5} & \textbf{5} & 5 & 5 & 1{,}0 \\
+4-FullIns\_3 & 114 & 541 & -- & \textbf{7} & \textbf{7} & \textbf{7} & \textbf{7} & 7 & 7 & 1{,}3 \\
+2-Insertions\_4 & 149 & 541 & 4 & 6 & \textbf{5} & \textbf{5} & \textbf{5} & 5 & 5 & 1{,}7 \\
+5-FullIns\_3 & 154 & 792 & -- & 9 & \textbf{8} & \textbf{8} & \textbf{8} & 8 & 8 & 1{,}5 \\
+1-Insertions\_5 & 202 & 1227 & -- & \textbf{6} & \textbf{6} & \textbf{6} & \textbf{6} & 6 & 6 & 2{,}1 \\
+2-FullIns\_4 & 212 & 1621 & -- & 8 & \textbf{6} & \textbf{6} & \textbf{6} & 6 & 6 & 2{,}3 \\
+3-Insertions\_4 & 281 & 1046 & -- & 6 & \textbf{5} & \textbf{5} & \textbf{5} & 5 & 5 & 3{,}2 \\
+1-FullIns\_5 & 282 & 3247 & -- & 8 & \textbf{6} & \textbf{6} & \textbf{6} & 6 & 6 & 2{,}8 \\
+3-FullIns\_4 & 405 & 3524 & -- & 9 & \textbf{7} & \textbf{7} & \textbf{7} & 7 & 7 & 4{,}4 \\
+4-Insertions\_4 & 475 & 1795 & -- & 6 & \textbf{5} & \textbf{5} & \textbf{5} & 5 & 5 & 4{,}2 \\
+2-Insertions\_5 & 597 & 3936 & -- & 8 & \textbf{6} & \textbf{6} & \textbf{6} & -- & 6 & 6{,}4 \\
+1-Insertions\_6 & 607 & 6337 & -- & 8 & \textbf{7} & \textbf{7} & \textbf{7} & -- & 7 & 7{,}5 \\
+4-FullIns\_4 & 690 & 6650 & -- & 10 & \textbf{8} & \textbf{8} & \textbf{8} & -- & 8 & 8{,}3 \\
+2-FullIns\_5 & 852 & 12201 & -- & 10 & \textbf{7} & \textbf{7} & \textbf{7} & -- & 7 & 7{,}6 \\
+5-FullIns\_4 & 1085 & 11395 & -- & 11 & \textbf{9} & \textbf{9} & \textbf{9} & -- & 9 & 14{,}9 \\
+3-Insertions\_5 & 1406 & 9695 & -- & 8 & \textbf{6} & \textbf{6} & \textbf{6} & -- & 6 & 20{,}2 \\
+3-FullIns\_5 & 2030 & 33751 & -- & 12 & \textbf{8} & \textbf{8} & \textbf{8} & -- & 8 & 41{,}6 \\
+4-FullIns\_5 & 4146 & 77305 & -- & 14 & \textbf{9} & \textbf{9} & \textbf{9} & -- & 9 & 171{,}3 \\
+\multicolumn{11}{@{}l}{\emph{Mycielski}} \\
+myciel3 & 11 & 20 & 4 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 0{,}1 \\
+myciel4 & 23 & 71 & 5 & 6 & \textbf{5} & \textbf{5} & \textbf{5} & 5 & 5 & 0{,}2 \\
+myciel5 & 47 & 236 & 6 & \textbf{6} & \textbf{6} & \textbf{6} & \textbf{6} & 6 & 6 & 0{,}5 \\
+myciel6 & 95 & 755 & 7 & \textbf{7} & \textbf{7} & \textbf{7} & \textbf{7} & 7 & 7 & 1{,}0 \\
+myciel7 & 191 & 2360 & 8 & \textbf{8} & \textbf{8} & \textbf{8} & \textbf{8} & 8 & 8 & 2{,}2 \\
+\multicolumn{11}{@{}l}{\emph{alocação de registradores}} \\
+mulsol.i.3 & 184 & 3916 & 31 & \textbf{31} & \textbf{31} & \textbf{31} & \textbf{31} & 31 & 31 & 1{,}8 \\
+mulsol.i.4 & 185 & 3946 & 31 & \textbf{31} & \textbf{31} & \textbf{31} & \textbf{31} & 31 & 31 & 1{,}9 \\
+mulsol.i.5 & 186 & 3973 & 31 & \textbf{31} & \textbf{31} & \textbf{31} & \textbf{31} & 31 & 31 & 2{,}0 \\
+mulsol.i.2 & 188 & 3885 & 31 & \textbf{31} & \textbf{31} & \textbf{31} & \textbf{31} & 31 & 31 & 2{,}0 \\
+mulsol.i.1 & 197 & 3925 & 49 & \textbf{49} & \textbf{49} & \textbf{49} & \textbf{49} & 49 & 49 & 2{,}1 \\
+zeroin.i.3 & 206 & 3540 & 30 & \textbf{30} & \textbf{30} & \textbf{30} & \textbf{30} & 30 & 30 & 2{,}1 \\
+zeroin.i.1 & 211 & 4100 & 49 & \textbf{49} & \textbf{49} & \textbf{49} & \textbf{49} & 49 & 49 & 2{,}3 \\
+zeroin.i.2 & 211 & 3541 & 30 & \textbf{30} & \textbf{30} & \textbf{30} & \textbf{30} & 30 & 30 & 1{,}9 \\
+fpsol2.i.3 & 425 & 8688 & 30 & \textbf{30} & \textbf{30} & \textbf{30} & \textbf{30} & 30 & 30 & 5{,}1 \\
+fpsol2.i.2 & 451 & 8691 & 30 & 31 & \textbf{30} & \textbf{30} & \textbf{30} & 30 & 30 & 5{,}2 \\
+fpsol2.i.1 & 496 & 11654 & 65 & \textbf{65} & \textbf{65} & \textbf{65} & \textbf{65} & 65 & 65 & 6{,}2 \\
+inithx.i.3 & 621 & 13969 & 31 & \textbf{31} & \textbf{31} & \textbf{31} & \textbf{31} & -- & 31 & 5{,}3 \\
+inithx.i.2 & 645 & 13979 & 31 & \textbf{31} & \textbf{31} & \textbf{31} & \textbf{31} & -- & 31 & 5{,}4 \\
+inithx.i.1 & 864 & 18707 & 54 & \textbf{54} & \textbf{54} & \textbf{54} & \textbf{54} & -- & 54 & 11{,}1 \\
+\multicolumn{11}{@{}l}{\emph{flat (Culberson)}} \\
+flat300\_20\_0 & 300 & 21375 & 20 & 47 & 44 & 42 & \textbf{37} & 36 & 37 & 2{,}6 \\
+flat300\_26\_0 & 300 & 21633 & 26 & 48 & 45 & 42 & \textbf{38} & 36 & 38 & 2{,}7 \\
+flat300\_28\_0 & 300 & 21695 & 28 & 47 & 45 & 41 & \textbf{37} & 37 & 37 & 2{,}7 \\
+flat1000\_50\_0 & 1000 & 245000 & 50 & 123 & 123 & 113 & \textbf{106} & -- & 106 & 12{,}0 \\
+flat1000\_60\_0 & 1000 & 245830 & 60 & 126 & 121 & 112 & \textbf{105} & -- & 105 & 12{,}0 \\
+flat1000\_76\_0 & 1000 & 246708 & 76 & 126 & 123 & 115 & \textbf{105} & -- & 105 & 11{,}6 \\
+\multicolumn{11}{@{}l}{\emph{frequências (wap)}} \\
+wap05a & 905 & 43081 & -- & 55 & 51 & \textbf{50} & \textbf{50} & -- & 50 & 11{,}5 \\
+wap06a & 947 & 43571 & -- & 56 & 48 & \textbf{44} & \textbf{44} & -- & 44 & 12{,}6 \\
+wap07a & 1809 & 103368 & -- & 60 & 52 & 47 & \textbf{45} & -- & \textit{47} & 30{,}8 \\
+wap08a & 1870 & 104176 & -- & 59 & 51 & \textbf{44} & 45 & -- & 44 & 32{,}0 \\
+wap01a & 2368 & 110871 & -- & 56 & 52 & \textbf{47} & \textbf{47} & -- & 47 & 54{,}9 \\
+wap02a & 2464 & 111742 & -- & 55 & 48 & 46 & \textbf{44} & -- & \textit{46} & 57{,}8 \\
+wap03a & 4730 & 286722 & -- & 61 & 56 & 57 & \textbf{52} & -- & \textit{58} & 225{,}9 \\
+wap04a & 5231 & 294902 & -- & 61 & 50 & \textbf{46} & 47 & -- & \textit{47} & 285{,}9 \\
+\multicolumn{11}{@{}l}{\emph{horário escolar}} \\
+school1\_nsh & 352 & 14612 & -- & 41 & 34 & 26 & \textbf{24} & 14 & \textit{26} & 4{,}3 \\
+school1 & 385 & 19095 & -- & 42 & 32 & \textbf{20} & 28 & 15 & 20 & 4{,}2 \\
+\multicolumn{11}{@{}l}{\emph{jogos (SGB)}} \\
+games120 & 120 & 638 & 9 & 10 & \textbf{9} & \textbf{9} & \textbf{9} & 9 & 9 & 1{,}3 \\
+\multicolumn{11}{@{}l}{\emph{le450 (Leighton)}} \\
+le450\_15a & 450 & 8168 & 15 & 21 & 18 & \textbf{17} & \textbf{17} & 16 & 17 & 5{,}3 \\
+le450\_15b & 450 & 8169 & 15 & 21 & 18 & 17 & \textbf{16} & 16 & \textit{17} & 4{,}9 \\
+le450\_15c & 450 & 16680 & 15 & 30 & 26 & 24 & \textbf{23} & 22 & \textbf{22} & 5{,}1 \\
+le450\_15d & 450 & 16750 & 15 & 31 & 26 & 24 & \textbf{23} & 22 & \textit{24} & 4{,}5 \\
+le450\_25a & 450 & 8260 & 25 & 28 & 26 & \textbf{25} & \textbf{25} & 25 & 25 & 5{,}1 \\
+le450\_25b & 450 & 8263 & 25 & 29 & \textbf{25} & \textbf{25} & \textbf{25} & 25 & 25 & 5{,}2 \\
+le450\_25c & 450 & 17343 & 25 & 36 & 29 & \textbf{28} & \textbf{28} & 27 & 28 & 4{,}6 \\
+le450\_25d & 450 & 17425 & 25 & 36 & 30 & 29 & \textbf{28} & 27 & \textit{29} & 3{,}1 \\
+le450\_5a & 450 & 5714 & 5 & 14 & 11 & 10 & \textbf{8} & 7 & 8 & 4{,}7 \\
+le450\_5b & 450 & 5734 & 5 & 12 & 12 & \textbf{7} & 8 & 5 & \textit{8} & 4{,}6 \\
+le450\_5c & 450 & 9803 & 5 & 15 & 12 & 11 & \textbf{5} & 5 & 5 & 5{,}3 \\
+le450\_5d & 450 & 9757 & 5 & 17 & 14 & 11 & \textbf{5} & 5 & 5 & 5{,}2 \\
+\multicolumn{11}{@{}l}{\emph{livros (SGB)}} \\
+huck & 74 & 301 & 11 & \textbf{11} & \textbf{11} & \textbf{11} & \textbf{11} & 11 & 11 & 0{,}8 \\
+jean & 80 & 254 & 10 & 11 & \textbf{10} & \textbf{10} & \textbf{10} & 10 & 10 & 0{,}9 \\
+david & 87 & 406 & 11 & 13 & \textbf{11} & \textbf{11} & \textbf{11} & 11 & 11 & 0{,}8 \\
+anna & 138 & 493 & 11 & \textbf{11} & \textbf{11} & \textbf{11} & \textbf{11} & 11 & 11 & 1{,}5 \\
+homer & 561 & 1628 & 13 & \textbf{13} & \textbf{13} & \textbf{13} & \textbf{13} & -- & 13 & 5{,}8 \\
+\multicolumn{11}{@{}l}{\emph{milhas (SGB)}} \\
+miles1000 & 128 & 3216 & 42 & 45 & 43 & \textbf{42} & \textbf{42} & 42 & 42 & 1{,}4 \\
+miles1500 & 128 & 5198 & 73 & 74 & \textbf{73} & \textbf{73} & \textbf{73} & 73 & 73 & 1{,}5 \\
+miles250 & 128 & 387 & 8 & 9 & \textbf{8} & \textbf{8} & \textbf{8} & 8 & 8 & 1{,}2 \\
+miles500 & 128 & 1170 & 20 & 22 & \textbf{20} & \textbf{20} & \textbf{20} & 20 & 20 & 1{,}4 \\
+miles750 & 128 & 2113 & 31 & 34 & 32 & \textbf{31} & \textbf{31} & 31 & 31 & 1{,}4 \\
+\multicolumn{11}{@{}l}{\emph{mug}} \\
+mug88\_1 & 88 & 146 & 4 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 1{,}0 \\
+mug88\_25 & 88 & 146 & 4 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 0{,}9 \\
+mug100\_1 & 100 & 166 & 4 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 1{,}2 \\
+mug100\_25 & 100 & 166 & 4 & \textbf{4} & \textbf{4} & \textbf{4} & \textbf{4} & 4 & 4 & 1{,}2 \\
+\multicolumn{11}{@{}l}{\emph{quadrado latino}} \\
+latin\_square\_10 & 900 & 307350 & -- & 151 & 213 & 129 & \textbf{122} & -- & 122 & 11{,}3 \\
+\multicolumn{11}{@{}l}{\emph{quasigrupos}} \\
+qg.order30 & 900 & 26100 & 30 & 34 & 32 & 32 & \textbf{30} & -- & 30 & 11{,}0 \\
+qg.order40 & 1600 & 62400 & 40 & 44 & 64 & 42 & \textbf{40} & -- & 40 & 22{,}3 \\
+qg.order60 & 3600 & 212400 & 60 & 65 & 64 & 63 & \textbf{60} & -- & 60 & 94{,}3 \\
+qg.order100 & 10000 & 990000 & 100 & 109 & 128 & 106 & \textbf{101} & -- & 101 & 912{,}8 \\
+\multicolumn{11}{@{}l}{\emph{rainhas (SGB)}} \\
+queen5\_5 & 25 & 160 & 5 & 7 & 7 & \textbf{5} & \textbf{5} & 5 & 5 & 0{,}3 \\
+queen6\_6 & 36 & 290 & 7 & 10 & 9 & 9 & \textbf{8} & 8 & 8 & 0{,}4 \\
+queen7\_7 & 49 & 476 & 7 & 10 & 12 & 10 & \textbf{9} & 9 & 9 & 0{,}5 \\
+queen8\_8 & 64 & 728 & 9 & 13 & 13 & 13 & \textbf{10} & 10 & 10 & 0{,}7 \\
+queen9\_9 & 81 & 1056 & 10 & 15 & 15 & 12 & \textbf{11} & 11 & 11 & 0{,}8 \\
+queen8\_12 & 96 & 1368 & 12 & 16 & 15 & 14 & \textbf{13} & 13 & 13 & 1{,}0 \\
+queen10\_10 & 100 & 1470 & -- & 15 & 17 & 14 & \textbf{13} & 12 & 13 & 1{,}0 \\
+queen11\_11 & 121 & 1980 & 11 & 16 & 17 & \textbf{14} & \textbf{14} & 13 & 14 & 1{,}1 \\
+queen12\_12 & 144 & 2596 & -- & 18 & 19 & 16 & \textbf{14} & 14 & \textit{15} & 1{,}5 \\
+queen13\_13 & 169 & 3328 & 13 & 19 & 23 & 17 & \textbf{16} & 16 & 16 & 2{,}1 \\
+queen14\_14 & 196 & 4186 & -- & 20 & 25 & 19 & \textbf{17} & 16 & 17 & 2{,}3 \\
+queen15\_15 & 225 & 5180 & -- & 22 & 25 & 20 & \textbf{18} & 18 & 18 & 2{,}8 \\
+queen16\_16 & 256 & 6320 & -- & 22 & 27 & 21 & \textbf{19} & 19 & 19 & 3{,}1 \\
+\end{longtable}
+}

@@ -1,0 +1,12 @@
+{'system': 'transformer', 'file': 'samples/transformer/showcase/transformer_000.mid', 'bars': 22.1, 'notes': 505, 'pitch_range': 37, 'polyphony': 3.91, 'scale_consistency': 0.949, 'audio': 'aditivo'}
+{'system': 'transformer', 'file': 'samples/transformer/showcase/transformer_001.mid', 'bars': 9.0, 'notes': 148, 'pitch_range': 34, 'polyphony': 3.8, 'scale_consistency': 0.932, 'audio': 'aditivo'}
+{'system': 'transformer', 'file': 'samples/transformer/showcase/transformer_002.mid', 'bars': 27.0, 'notes': 389, 'pitch_range': 35, 'polyphony': 3.9, 'scale_consistency': 0.918, 'audio': 'aditivo'}
+{'system': 'transformer', 'file': 'samples/transformer/showcase/transformer_003.mid', 'bars': 24.1, 'notes': 566, 'pitch_range': 38, 'polyphony': 4.0, 'scale_consistency': 0.919, 'audio': 'aditivo'}
+{'system': 'transformer', 'file': 'samples/transformer/showcase/transformer_004.mid', 'bars': 14.0, 'notes': 181, 'pitch_range': 35, 'polyphony': 3.75, 'scale_consistency': 0.989, 'audio': 'aditivo'}
+{'system': 'markov', 'file': 'samples/markov/showcase/markov_000.mid', 'bars': 23.0, 'notes': 321, 'pitch_range': 48, 'polyphony': 4.55, 'scale_consistency': 0.642, 'audio': 'aditivo'}
+{'system': 'markov', 'file': 'samples/markov/showcase/markov_001.mid', 'bars': 14.6, 'notes': 190, 'pitch_range': 45, 'polyphony': 4.02, 'scale_consistency': 0.616, 'audio': 'aditivo'}
+{'system': 'markov', 'file': 'samples/markov/showcase/markov_002.mid', 'bars': 15.0, 'notes': 200, 'pitch_range': 41, 'polyphony': 3.68, 'scale_consistency': 0.65, 'audio': 'aditivo'}
+{'system': 'markov', 'file': 'samples/markov/showcase/markov_003.mid', 'bars': 12.0, 'notes': 109, 'pitch_range': 46, 'polyphony': 3.29, 'scale_consistency': 0.633, 'audio': 'aditivo'}
+{'system': 'markov', 'file': 'samples/markov/showcase/markov_004.mid', 'bars': 13.0, 'notes': 202, 'pitch_range': 39, 'polyphony': 4.52, 'scale_consistency': 0.663, 'audio': 'aditivo'}
+{'system': 'test', 'file': 'samples/human/showcase/test_000.mid', 'bars': 15.0, 'notes': 197, 'pitch_range': 39, 'polyphony': 3.77, 'scale_consistency': 0.99, 'audio': 'aditivo'}
+{'system': 'test', 'file': 'samples/human/showcase/test_001.mid', 'bars': 13.0, 'notes': 216, 'pitch_range': 33, 'polyphony': 3.95, 'scale_consistency': 0.935, 'audio': 'aditivo'}

@@ -1,0 +1,15 @@
+{
+  "system": "transformer",
+  "n": 200,
+  "temperature": 1.0,
+  "top_k": 0,
+  "top_p": 0.95,
+  "max_tokens": 2600,
+  "batch": 50,
+  "seed": 123,
+  "subdir": "eval",
+  "time_s": 239.3373749256134,
+  "mean_len": 593.66,
+  "hit_max_tokens": 1,
+  "empty_outputs": 0
+}

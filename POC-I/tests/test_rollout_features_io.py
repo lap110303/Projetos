@@ -4,7 +4,7 @@ import numpy as np
 from poc.features import average_clustering, degeneracy, graph_features, replay
 from poc.graphs import GraphSpec, from_networkx, generate, to_networkx
 from poc.heuristics import HEURISTICS, is_valid_coloring, run_heuristic
-from poc.io_dimacs import read_dimacs, write_dimacs
+from poc.io_dimacs import read_dimacs, write_dimacs, write_dimacs_binary
 from poc.rollout import rollout_trajectory
 from poc.storage import load_graph, save_graph
 
@@ -73,3 +73,10 @@ def test_dimacs_roundtrip(tmp_path):
     A = from_networkx(nx.petersen_graph())
     write_dimacs(tmp_path / "p.col", A, "petersen")
     assert (read_dimacs(tmp_path / "p.col") == A).all()
+
+
+def test_dimacs_binary_roundtrip(tmp_path, random_graphs):
+    """Formato binário (.col.b): ida e volta, inclusive n não múltiplo de 8."""
+    for gid, A in random_graphs[:6] + [("petersen", from_networkx(nx.petersen_graph()))]:
+        write_dimacs_binary(tmp_path / "g.col.b", A, gid)
+        assert (read_dimacs(tmp_path / "g.col.b") == A).all(), gid

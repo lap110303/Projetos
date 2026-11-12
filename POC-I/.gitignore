@@ -1,0 +1,20 @@
+# Ambiente virtual e caches do Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Base completa: regenerável com scripts/build_dataset.py
+data/*
+!data/.gitkeep
+
+# Temporários do piloto
+results/pilot/tmp_graphs/
+results/pilot/_*.parquet
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
